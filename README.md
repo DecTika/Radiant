@@ -3,7 +3,7 @@ Radiant est une fiction interactive textuelle s’inspirant grandement des clich
 
 ![image](https://github.com/user-attachments/assets/ff779f4f-c379-49d8-843e-61a8cc33bd91)
 
-Pour y jouer, il faut télécharger le fichier et le lancer avec Twine.
+Pour y jouer, il faut télécharger le fichier et le lancer avec le logiciel Twine ou SugarCube.
 
 Cette fiction, à la manière d’un Livre dont vous êtes le héros, donne au joueur ou à la joueuse une quête prophétique qu’il ou elle doit accomplir. Pour braver la mort, il vous faudra faire les bons choix. Une séquence de réponse textuelle est aussi incorporée. Mais cette fiction repose surtout sur l’usage de variables, invisibles au joueur, qui influencent la visibilité de certaines parties du texte, et de certains choix.
 
