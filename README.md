@@ -8,3 +8,7 @@ N’étant pas très callée en codage, une grande partie du code (si ce n’est
 Enfin, il est à noter que cette fiction a été écrite pour la validation du séminaire « Fiction interactive », donné à l’UNIL par Isaac Plante.
 
 - DecTika
+
+
+![image](https://github.com/user-attachments/assets/ff779f4f-c379-49d8-843e-61a8cc33bd91)
+
