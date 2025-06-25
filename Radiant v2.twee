@@ -1,0 +1,1664 @@
+:: StoryTitle
+Radiant III
+
+
+:: StoryData
+{
+  "ifid": "71e2c7ef-2673-41af-9ce9-1d2c4b959042",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "la prophétie",
+  "tag-colors": {
+    "ok": "green",
+    "mise-en-forme": "purple",
+    "code-ok": "green",
+    "à-test": "green",
+    "marche-pas": "red",
+    "à-modif-avant-de-finir": "blue",
+    "si-le-temps": "orange",
+    "incomplet": "orange",
+    "double-a-sup-?": "orange"
+  },
+  "zoom": 1
+}
+
+
+:: Abandonner [code-ok] {"position":"1300,500","size":"100,100"}
+<<set $statut to "libre" >>
+
+<<if $genre is "femme">>« Je suis désolée mais je dois sauver le monde. »
+
+« Tu m’as pas écouté. C’est trop tard. Les humains vont disparaitre quoi que tu fasses. Et c’est pas en sabotant l’œuvre de ma vie que tu vas y changer quelque chose. »
+
+« Non, je … tu as raison. Pardon, c’est juste que pour le coup l’œuvre de ma vie c’était cet objectif. Mais ça ne servirait à rien de m’acharner. »
+
+« Bien, tu me rassures. Et pour te rassurer à mon tour ne t’en fais pas, je vais pas répéter les erreurs des Anciens. Il faudrait des générations pour y arriver de toute manière. »
+
+« J’espère bien. Sinon je reviendrai pour toi … »
+
+« T’es plutôt flippante. Mais bon, qu’est ce que tu comptes faire maintenant ? Tu veux passer la nuit ici pour découvrir le confort des radiateurs ? »
+
+« Non ça ira merci, les feux de cheminés me suffisent. Je pense que je vais rentrer à présent. Histoire de profiter du temps qu’il me reste à vivre »
+
+« Pourquoi tu dis ça ? »
+
+« On est tous destinés à mourir. Ne t’en fais pas pour moi. Adieu. »
+
+« Prend garde à toi sur la route, y a de sacrés chiens ! »
+
+<<else>>« Je suis désolé mais je dois sauver le monde. »
+
+« Tu m’as pas écouté. C’est trop tard. Les humains vont disparaitre quoi que tu fasses. Et c’est pas en sabotant l’œuvre de ma vie que tu vas y changer quelque chose. »
+
+« Non, je … tu as raison. Pardon, c’est juste que pour le coup l’œuvre de ma vie c’était cet objectif. Mais ça ne servirait à rien de m’acharner. »
+
+« Bien, tu me rassures. Et pour te rassurer à mon tour ne t’en fais pas, je vais pas répéter les erreurs des Anciens. Il faudrait des générations pour y arriver de toute manière. »
+
+« J’espère bien. Sinon je reviendrai pour toi … »
+
+« T’es plutôt flippant. Mais bon, qu’est ce que tu comptes faire maintenant ? Tu veux passer la nuit ici pour découvrir le confort des radiateurs ? »
+
+« Non ça ira merci, les feux de cheminés me suffisent. Je pense que je vais rentrer à présent. Histoire de profiter du temps qu’il me reste à vivre »
+
+« Pourquoi tu dis ça ? »
+
+« On est tous destinés à mourir. Ne t’en fais pas pour moi. Adieu. »
+
+« Prend garde à toi sur la route, y a de sacrés chiens ! »<</if>>
+
+[[rentrer chez soi|libre]]
+
+
+
+
+
+
+
+:: Détruir la machine de Lev [code-ok] {"position":"1300,300","size":"100,100"}
+<<if $genre is "femme">>
+L'héroïne poussa le vieil homme qui tomba de suite à terre. L’élue descendit ensuite dans l’eau sous les avertissements de Lev. Sans les écouter, déterminée, l’élue frappa d’un grand coup de pied la lampe. En tombant, celle-ci propagea dans l’eau un courant électrique. L’élue succomba.
+<<else>>Le héros poussa le vieil homme qui tomba de suite à terre. L’élu descendit ensuite dans l’eau sous les avertissements de Lev. Sans les écouter, déterminé, l’élu frappa d’un grand coup de pied la lampe. En tombant, celle-ci propagea dans l’eau un courant électrique. L’élu succomba.<</if>>
+
+[[succomber|mort en héros]]
+
+
+
+:: FIN errance [code-ok] {"position":"2300,700","size":"100,100"}
+<<if $genre is "femme">>
+« Sache que tu n’es de loin pas la seule personne à ne pas vouloir rejoindre l’au-delà. Toutefois, nous devons te rappeler que cela ne fait que retarder l’inévitable. »
+
+« Je ne peux pas juste rester ici dans ce monde pour l’éternité ? »
+
+« Oui, tu le peux. Mais nous te déconseillons de le faire. »
+
+« Pourquoi ? »
+
+« Parce que cela ne sert à rien. Nous allons bientôt te laisser pour accueillir d’autres âmes, tu seras donc complétement seule dans un lieu purement transitoire, sans autre distraction que la pierre et les arbres. De plus, celles et ceux qui s’obstinent dans cette voie ne sont condamnés qu’à oublier jusqu’à leur propre existence. Leurs âmes s’émiettent dans l’éternité, là où seul le néant peut en ramasser les morceaux. »
+
+« Je ne peux pas accueillir les âmes comme vous ? »
+
+« Non. Ce monde est conçu spécialement pour toi. Tu ne peux pas entrer en lien avec d’autres âmes. Vois ça comme une sorte de rêve. »
+
+« Pourquoi vous vous pouvez alors ? Vous êtes des dieux ? »
+
+« Non, Nous sommes des décomposeurs. Nous décomposons. »
+
+« Vous n’avez pas répondu à ma question. »
+
+« Ce n’est pas grave. À présent vague autant si c’est ce que tu souhaites, mais tu ne feras que perdre ton temps. »
+
+[[« Non c’est bon je vais suivre vos conseils. Je suis prête à m’en aller, pour de bon cette fois. » |acceptance]]<<else>>« Sache que tu n’es de loin pas la seule personne à ne pas vouloir rejoindre l’au-delà. Toutefois, nous devons te rappeler que cela ne fait que retarder l’inévitable. »
+
+« Je ne peux pas juste rester ici dans ce monde pour l’éternité ? »
+
+« Oui, tu le peux. Mais nous te déconseillons de le faire. »
+
+« Pourquoi ? »
+
+« Parce que cela ne sert à rien. Nous allons bientôt te laisser pour accueillir d’autres âmes, tu seras donc complétement seul dans un lieu purement transitoire, sans autre distraction que la pierre et les arbres. De plus, celles et ceux qui s’obstinent dans cette voie ne sont condamnés qu’à oublier jusqu’à leur propre existence. Leurs âmes s’émiettent dans l’éternité, là où seul le néant peut en ramasser les morceaux. »
+
+« Je ne peux pas accueillir les âmes comme vous ? »
+
+« Non. Ce monde est conçu spécialement pour toi. Tu ne peux pas entrer en lien avec d’autres âmes. Vois ça comme une sorte de rêve. »
+
+« Pourquoi vous vous pouvez alors ? Vous êtes des dieux ? »
+
+« Non, Nous sommes des décomposeurs. Nous décomposons.»
+
+« Vous n’avez pas répondu à ma question. »
+
+« Ce n’est pas grave. À présent vague autant si c’est ce que tu souhaites, mais tu ne feras que perdre ton temps. »
+
+[[« Non c’est bon je vais suivre vos conseils. Je suis prêt à m’en aller, pour de bon cette fois. » |acceptance]]<</if>>
+
+<<link "errer">>
+	<<set $statut to "errance">>
+	<<goto "Partir de ce monde">>
+<</link>>
+
+
+
+:: FIN recommencer [code-ok] {"position":"2400,100","size":"100,100"}
+<<if $genre is "femme">>
+« Qu’il en soit ainsi. Nous nous reverrons, alors profite bien du temps qu’il te reste. »
+
+Sans même un au revoir, l’élue fut projetée des années en arrière. Ses cellules se firent dévorées, puis recrachées, enfin recomposées en un corps qui ne lui avait plus appartenu depuis des lustres. Elle avait à nouveau sept ans et l’esprit qui va avec. Elle s’était réveillée d’une trop longue sieste et voyait encore au travers des souvenirs d’un rêve bien trop vivide pour être totalement effacé. Sans toutefois trop le considérer avec plus de sérieux, la petite fille s’en alla au dehors de sa maison. 
+
+La brume, comme toujours, rampait au sol et diffusait pour le timide soleil sa brillante lumière. Au champ, une silhouette s’adonnait à travailler la terre de son outil. Ce son régulier, s’enfonçant dans la terre, ressortant, réveilla une étrange sensation chez l’enfant. Qui était cet adulte déjà ? La silhouette tourna la tête et remarqua l’enfant. Elle posa l’outil et s’approcha d’elle. La fillette était éblouie. Elle ne s’était endormie qu’une heure, et pourtant il lui sembla n’avoir pas revu la lumière depuis des années. Alors quand ce visage éclaira l’air d’une voix inconnue et pourtant familière : « Tout va bien mon trésor ? » S’en était trop pour ce si petit être qui se mit à pleurer à bien trop grosses gouttes.
+
+Les jours passèrent, les mois, et les années sans jamais que l’enfant, devenue adulte, n’oublie le sentiment qu’elle avait eu ce jour-là. Celui que tout peut très vite disparaître. De son songe il ne restait que la sensation. Mais s’en était assez pour l’éloigner d’une trajectoire de vie qui ne lui appartenait plus, ou plutôt qui ne lui avait jamais vraiment appartenu.
+
+Elle mena une vie banale de fermière. Elle vécut les sécheresses comme des épreuves, et les fortes pluies comme d’autres. Vécut en regrettant de n’avoir pas le courage de suivre de plus grands desseins, de changer la face du monde. Vécut comme une anonyme. Mais elle vécut en profitant de chaque instant, portant le deuil de mille morts. Vécut en chérissant chaque moment passé avec ceux qu’elle aime. De leur euphorie à leur incinération. Jusqu’à ses propres funérailles.
+
+Un combat de six mois. Une lente agonie. La mort avait encore frappé plus tôt que désiré. 
+
+<<else>>« Qu’il en soit ainsi. Nous nous reverrons, alors profite bien du temps qu’il te reste. »
+
+Sans même un au revoir, l’élu fut projeté des années en arrière. Ses cellules se firent dévorées, puis recrachées, enfin recomposées en un corps qui ne lui avait plus appartenu depuis des lustres. Il avait à nouveau sept ans et l’esprit qui va avec. Il s’était réveillé d’une trop longue sieste et voyait encore au travers des souvenirs d’un rêve bien trop vivide pour être totalement effacé. Sans toutefois trop le considérer avec plus de sérieux, le petit garçon s’en alla au dehors de sa maison.
+
+La brume, comme toujours, rampait au sol et diffusait pour le timide soleil sa brillante lumière. Au champ, une silhouette s’adonnait à travailler la terre de son outil. Ce son régulier, s’enfonçant dans la terre, ressortant, réveilla une étrange sensation chez l’enfant. Qui était cet adulte déjà ? La silhouette tourna la tête et remarqua l’enfant. Elle posa l’outil et s’approcha de lui. Le jeune garçon était ébloui. Il ne s’était endormi qu’une heure ou deux, et pourtant il lui sembla n’avoir pas revu la lumière depuis des années. Alors quand ce visage éclaira l’air d’une voix inconnue et pourtant familière : « Tout va bien mon trésor ? » S’en était trop pour ce si petit être qui se mit à pleurer à bien trop grosses gouttes.
+
+Les jours passèrent, les mois, et les années sans jamais que l’enfant, devenu adulte, n’oublie le sentiment qu’il avait eu ce jour-là. Celui que tout peut très vite disparaître. De son songe il ne restait que la sensation. Mais s’en était assez pour l’éloigner d’une trajectoire de vie qui ne lui appartenait plus, ou plutôt qui ne lui avait jamais vraiment appartenu.
+
+Il mena une vie banale de fermier. Il vécut les sécheresses comme des épreuves, et les fortes pluies comme d’autres. Vécut en regrettant de n’avoir pas le courage de suivre de plus grands desseins, de changer la face du monde. Vécut comme un anonyme. Mais il vécut en profitant de chaque instant. Vécut en chérissant chaque moment passé avec ceux qu’il aime. De leur euphorie à leur incinération. Et ce jusqu’à ses propres funérailles.
+
+Un combat de six mois. Une lente agonie. La mort avait encore frappé plus tôt que désiré. <</if>>
+
+[[mourir|FIN recommencer 2]]
+
+
+:: FIN recommencer 2 [code-ok] {"position":"2500,100","size":"100,100"}
+<<if $genre is "femme">>Un désert, un îlot de cyprès. On dirait un cimetière au milieu de nulle part. J’ai l’impression d’être déjà venue ici. Je m’approche, passe à côté d’une barque en piteuse état, et rejoins l’îlot. Il fait si sombre sous ces arbres.
+
+Soudain, un être encapuchonné sort de l’obscurité. Il ne me fait pas peur. 
+
+« Bienvenue dans le monde des morts. »
+
+Sa voix est si particulière, aiguë et amplifiée. Elle m’est connue et à la fois étrangère.
+
+« Il est grand temps pour toi de partir. J’espère juste que tu as pu profiter de ton existence jusqu’à son terme. »
+
+« Qu’est ce que je dois faire maintenant ? »
+
+« Tu sembles bien pressée. La plupart des gens sont un peu plus curieux que toi sur ce monde et ce qui les attend. D’où te vient ce trait ? »
+
+« Je ne sais pas trop à vrai dire. J’ai juste l’impression que tout ce contexte m’est déjà connu, et que je n’ai pas trop à m’en faire. »
+
+« Tu n’es donc pas réticente à l’idée de rejoindre le néant ? »
+
+« Pas vraiment non. Je suis juste fatiguée. »
+
+« D’accord. Alors si tu te sens prête tu peux aller dans la forêt de cyprès. Là-bas, ta fin t’appellera. »
+
+<<else>>Un désert, un îlot de cyprès. On dirait un cimetière au milieu de nulle part. J’ai l’impression d’être déjà venu ici. Je m’approche, passe à côté d’une barque en piteuse état, et rejoins l’îlot. Il fait si sombre sous ces arbres.
+
+Soudain, un être encapuchonné sort de l’obscurité. Il ne me fait pas peur. 
+
+« Bienvenue dans le monde des morts. »
+
+Sa voix est si particulière, aiguë et amplifiée. Elle m’est connue et à la fois étrangère.
+
+« Il est grand temps pour toi de partir. J’espère juste que tu as pu profiter de ton existence jusqu’à son terme. »
+
+« Qu’est-ce que je dois faire maintenant ? »
+
+« Tu sembles bien pressé. La plupart des gens sont un peu plus curieux que toi sur ce monde et ce qui les attend. D’où te vient ce trait ? »
+
+« Je ne sais pas trop à vrai dire. J’ai juste l’impression que tout ce contexte m’est déjà connu, et que je n’ai pas trop à m’en faire. »
+
+« Tu n’es donc pas réticent à l’idée de rejoindre le néant ? »
+
+« Pas vraiment non. Je suis juste fatigué. »
+
+« D’accord. Alors si tu te sens prêt tu peux aller dans la forêt de cyprès. Là-bas, ta fin t’appellera. »<</if>>
+
+[[Partir de ce monde]]
+
+
+
+:: FIN rentrer [code-ok] {"position":"2400,200","size":"100,100"}
+<<set $statut to "abandon">><<if $genre is "femme">>
+
+L’héroïne réapparut en face du temple de Radiance et de sa gardienne. Celle-ci garda le silence un instant. Puis, se redressant, dit :
+
+« Si c'est ce que tu souhaites vraiment, tu peux entrer. »
+
+« Non, j’abandonne. » L’héroïne se retourna et partit sous le regard interloqué de la Sphinx. Après une longue marche, elle laissa derrière elle la Zone, et s’éloigna de la radiance et de sa grâce présumée. 
+Alors elle marcha, marcha, et marcha encore sans s’arrêter, le souffle court. Des jours plus tard, elle se retrouva enfin dans son village natal, celui qui avait porté ses premiers espoirs. Peu de choses avaient vraiment changé : quelques planches en moins, quelques trous en plus. Pourtant là était toute la différence.
+
+ Des habitants l’aperçurent, coururent auprès d’elle, et lui sautèrent dessus. C’étaient des amis, de la famille, des proches, des êtres aimés. Tous étaient heureux de la retrouver. Elle en fut émue. L’on passa la nuit à la dorloter, la chouchouter, l’interroger, l’amuser, la nourrir. L’on avait organisé une fête improvisée en son honneur. Les lanternes perçaient l’obscurité tandis que la brume s’était ramollie. Attroupés autour d’une grande table, les plats cuits autour d’un imposant bûcher : pour la première fois il semblait que l’été était revenu en ces terres taries par ces nuages nés d’une autre ère.
+
+« J’ai peur de ne pas avoir fait assez pour vous » lâcha-t-elle à ses proches. Ensuite de quoi certains lui répondirent qu’elle n’avait pas à s’en faire, que passer du moment ensemble était tout ce qui comptait à présent.
+
+Elle eut une lancée dans le ventre. S’écarta du groupe. Vomit. Tout va toujours trop vite.
+
+L’on s’inquiéta, on la mit au lit, on s’en occupa pendant deux jours, puis elle mourut, cette fois entourés de ceux qu’elle aime.
+
+On n’a pas toujours le temps de faire tout ce que l’on souhaite. A son incinération une amitié de longue date prononça un discours en son honneur : 
+
+« Pendant six mois elle s’est battue. Pendant six mois tu t’es battue. Battue contre la maladie. Tu ne pouvais pas gagner mais tu as fait de ton mieux. Maintenant c’est à moi de me battre. À moi de me battre sans toi, en ton souvenir, pour ton souvenir. De continuer à avancer.  Ça ne va pas être facile, mais moi aussi je vais faire de mon mieux. J'espère vraiment qu'on se reverra. Je t'aime. »
+
+<<else>> Le héros réapparut en face du temple de Radiance et de sa gardienne. Celle-ci garda le silence un instant. Puis, se redressant, dit :
+
+« Si c'est ce que tu souhaites vraiment, tu peux entrer. »
+
+« Non, j’abandonne. » 
+
+Le héros se retourna et partit sous le regard interloqué de la Sphinx. Après une longue marche, il laissa derrière lui la Zone, et s’éloigna de la radiance et de sa grâce présumée.
+
+Alors il marcha, marcha, et marcha encore sans s’arrêter, le souffle court. Des jours plus tard, il se retrouva enfin dans son village natal, celui qui avait porté ses premiers espoirs. Peu de choses avaient vraiment changé : quelques planches en moins, quelques trous en plus. Pourtant là était toute la différence.
+
+Des habitants l’aperçurent, coururent auprès de lui, et lui sautèrent dessus. C’étaient des amis, de la famille, des proches, des êtres aimés. Tous étaient heureux de le retrouver. Il en fut ému. L’on passa la nuit à le dorloter, le chouchouter, l’interroger, l’amuser, le nourrir. L’on avait organisé une fête improvisée en son honneur. Les lanternes perçaient l’obscurité tandis que la brume s’était ramollie. Attroupés autour d’une grande table, les plats cuits autour d’un imposant bûcher : pour la première fois il semblait que l’été était revenu en ces terres taries par ces nuages nés d’une autre ère.
+
+« J’ai peur de ne pas avoir fait assez pour vous » lâcha-t-il à ses proches. Ensuite de quoi certains lui répondirent qu’il n’avait pas à s’en faire, que passer du moment ensemble était tout ce qui comptait à présent.
+
+Il eut une lancée dans le ventre. S’écarta du groupe. Vomit. Tout va toujours trop vite.
+
+L’on s’inquiéta, on le mit au lit, on s’en occupa pendant deux jours, puis il mourut, cette fois entourés de ceux qu’il aime.
+
+On n’a pas toujours le temps de faire tout ce que l’on souhaite. A son incinération une amitié de longue date prononça un discours en son honneur : 
+
+« Pendant six mois il s’est battu. Pendant six mois tu t’es battu. Battu contre la maladie. Tu ne pouvais pas gagner mais tu as fait de ton mieux. Maintenant c’est à moi de me battre. À moi de me battre sans toi, en ton souvenir, pour ton souvenir. De continuer à avancer.  Ça ne va pas être facile, mais moi aussi je vais faire de mon mieux. J'espère vraiment qu'on se reverra. Je t'aime. »
+ <</if>>
+
+[[quitter ce monde|FIN rentrer 2]]
+
+
+
+:: FIN rentrer 2 [code-ok] {"position":"2500,200","size":"100,100"}
+<<if $genre is "femme">>Me voilà une fois de plus devant cet ilot mortuaire, face au passeur. Mais cette fois je sens que tout est différent, qu’il n’y a plus de retour en arrière possible. C’est bientôt fini. 
+
+« Vous pensez que ça ira ? »
+
+« Si c’est à propos de tes proches : oui. L’épreuve qui les attend n’est facile pour personne. Mais avec le temps, leur douleur diminuera et il leur sera possible de vivre à nouveau pour eux-mêmes plutôt que sous la seule ombre de ton souvenir. Toi-même tu es déjà passée par là. Tu sais ce que ça fait. »
+
+Après un moment de répit ayant permis au vent de caresser l’herbe et les arbres, je reprends :
+
+« Bon, et qu’est ce qui va se passer pour moi maintenant ? » 
+
+« Il est temps pour toi de rejoindre la fin. Quand tu te sentiras prête, enfonce-toi dans la forêt de cyprès. La fin t’appellera »
+<<else>>Me voilà une fois de plus devant cet ilot mortuaire, face au passeur. Mais cette fois je sens que tout est différent, qu’il n’y a plus de retour en arrière possible. C’est bientôt fini. 
+
+« Vous pensez que ça ira ? »
+
+« Si c’est à propos de tes proches : oui. L’épreuve qui les attend n’est facile pour personne. Mais avec le temps, leur douleur diminuera et il leur sera possible de vivre à nouveau pour eux-mêmes plutôt que sous la seule ombre de ton souvenir. Toi-même tu es déjà passé par là. Tu sais ce que ça fait. »
+
+Après un moment de répit ayant permis au vent de caresser l’herbe et les arbres, je reprends :
+
+« Bon, et qu’est ce qui va se passer pour moi maintenant ? » 
+
+« Il est temps pour toi de rejoindre la fin. Quand tu te sentiras prêt, enfonce-toi dans la forêt de cyprès. La fin t’appellera »<</if>>
+
+[[Partir de ce monde]]
+
+
+:: La Zone [code-ok] {"position":"200,400","size":"100,100"}
+<<if $morts >= 2 and $genre is "femme">>Réémergée de la terre, l’élue n’eut pas le temps de prendre une inspiration qu’elle était déjà en mauvaise posture. Exactement comme avant sa dernière mort, et celle d’avant aussi : un hurlement. Le chien. Les chiens. Cela devenait une habitude. Ceux-ci étaient ressortis de la toundra cendrée pour se jeter devant elle. Ils étaient toujours cinq, grognant, voutés … bref pas beaux à voir. L’héroïne se prépara à réagir, nous l'espérions, de manière victorieuse :
+
+<<elseif $morts >= 2 and $genre is "homme">>Réémergé de la terre, l’élu n’eut pas le temps de prendre une inspiration qu’il était déjà en mauvaise posture. Exactement comme avant sa dernière mort, et celle d’avant aussi : un hurlement. Le chien. Les chiens. Cela devenait une habitude. Ceux-ci étaient ressortis de la toundra cendrée pour se jeter devant lui. Ils étaient toujours cinq, grognant, voutés … bref pas beaux à voir. Le héros se prépara à réagir, nous l'espérions, de manière victorieuse :
+
+<<elseif $mort is "chien" and $genre is "femme">>Réémergée de la terre, l’élue n’eut pas le temps de prendre une inspiration qu’elle était déjà en mauvaise posture. Exactement comme avant sa mort : un hurlement. Un chien. Les chiens. Ceux-ci étaient ressortis de la toundra cendrée pour se jeter devant elle. Ils étaient toujours cinq, grognant, voutés sur leur patte avant, la bouche sèche, les dents fines et la chaire parsemée de poiles rêches. Nous ne l’avions pas simplement ressuscitée : nous l’avions renvoyée à l’instant qui précédait sa mort. L’héroïne se prépara à réagir :
+
+
+<<elseif $mort is "chien" and $genre is "homme">>Réémergé de la terre, l’élu n’eut pas le temps de prendre une inspiration qu’il était déjà en mauvaise posture. Exactement comme avant sa mort : un hurlement. Un chien. Les chiens. Ceux-ci étaient ressortis de la toundra cendrée pour se jeter devant lui. Ils étaient toujours cinq, grognant, voutés sur leur patte avant, la bouche sèche, les dents fines et la chaire parsemée de poiles rêches. Nous ne l’avions pas simplement ressuscité : nous l’avions renvoyé à l’instant qui précédait sa mort. Le héros se prépara à réagir :
+
+<<elseif $mort != "chien" and $genre is "femme">>La tour Rayonnante était ce que l’on appelait aujourd’hui le Temple de Radiance. Temple d’une religion mineure dont les adeptes gardaient jalousement l’entrée. Pour s’y rendre, la tâche n’était pas aisée. Le temple se situait à l’intérieur de la Zone, une région abandonnée par les Anciens il y a des siècles de cela. L’on disait que ce lieu était maudit, que quiconque y mettrait les pieds se retrouverait transpercé par la radiance de Ash, la déesse de la flamme invisible. L’on disait aussi que sa flamme était la cause de tous les maux de ce monde : les vivants brûlaient de l’intérieur, et le soleil, caché sous un voile de fumée, pleurait cendres et poussières. Famine et maladie faisaient partie du quotidien des mortels.
+
+Dans l’espoir de trouver un remède à ce monde, des armées, des groupes d’aventuriers, parfois des héros solitaires, se lançaient en quête du Temple de Radiance afin d’y éteindre la flamme invisible. Mais nombreux sont celles et ceux qui essayèrent de s’emparer de ce temple en vain. Et nombreux sont celles et ceux qui tentèrent de s’y infiltrer sans jamais en revenir. Qu’est ce qui pouvait bien tuer ces aventuriers ? L’on savait que la Zone en elle-même était particulièrement hostile. La flamme invisible se dissimulait à l’intérieur de chaque plante, chaque cours d’eau, et il était alors proscrit d’y manger ou d’y boire quoique ce soit. On imaginait alors que la malédiction devait être bien plus intense au sein du temple. Mais d’autres se disaient que si ce temple était d’origine humaine, son maléfice devait l’être tout autant, et que de ce fait il devait être possible d’y mettre un terme. Les épées peuvent être brisées et les incendies éteints. 
+
+C’est dans cet objectif que l’élue entrepris son voyage en direction du Temple de Radiance. Des jours durant elle marcha avant d’enfin arriver vers le lieu de sa destinée. D’innombrables panneaux, échoués et dans une langue ancienne, jonchaient sa marche. Personne ne comprenait plus cette langue mais l’on savait ce qu’ils désignaient. Ces écrits des Anciens étaient l’avertissement d’une menace centenaire : celle de la flamme invisible. Une menace qui, bien qu’échappant à la compréhension actuelle, était connue de tous : Une peur transgénérationnelle.
+
+L’élue pu encore déceler sur le sol les restes d’une ancienne barrière de bronze, dorénavant traversable d’un seul pas. À peine le pied posé, un hurlement. Un chien. Des chiens. Ceux-ci étaient sortis de la toundra cendrée pour se jeter devant elle. Ils étaient cinq, grognant, voutés sur leur patte avant, la bouche sèche, les dents fines et la chaire parsemée de poiles rêches. L’héroïne se prépara à réagir :
+
+<<elseif $mort != "chien" and $genre is "homme">>La tour Rayonnante était ce que l’on appelait aujourd’hui le Temple de Radiance. Temple d’une religion mineure dont les adeptes gardaient jalousement l’entrée. Pour s’y rendre, la tâche n’était pas aisée. Le temple se situait à l’intérieur de la Zone, une région abandonnée par les Anciens il y a des siècles de cela. L’on disait que ce lieu était maudit, que quiconque y mettrait les pieds se retrouverait transpercé par la radiance de Ash, la déesse de la flamme invisible. L’on disait aussi que sa flamme était la cause de tous les maux de ce monde : les vivants brûlaient de l’intérieur, et le soleil, caché sous un voile de fumée, pleurait cendres et poussières. Famine et maladie faisaient partie du quotidien des mortels.
+
+Dans l’espoir de trouver un remède à ce monde, des armées, des groupes d’aventuriers, parfois des héros solitaires, se lançaient en quête du Temple de Radiance afin d’y éteindre la flamme invisible. Mais nombreux sont celles et ceux qui essayèrent de s’emparer de ce temple en vain. Et nombreux sont celles et ceux qui tentèrent de s’y infiltrer sans jamais en revenir. Qu’est ce qui pouvait bien tuer ces aventuriers ? L’on savait que la Zone en elle-même était particulièrement hostile. La flamme invisible se dissimulait à l’intérieur de chaque plante, chaque cours d’eau, et il était alors proscrit d’y manger ou d’y boire quoique ce soit. On imaginait alors que la malédiction devait être bien plus intense au sein du temple. Mais d’autres se disaient que si ce temple était d’origine humaine, son maléfice devait l’être tout autant, et que de ce fait il devait être possible d’y mettre un terme. Les épées peuvent être brisées et les incendies éteints. 
+
+C’est dans cet objectif que l’élu entrepris son voyage en direction du Temple de Radiance. Des jours durant il marcha avant d’enfin arriver vers le lieu de sa destinée. D’innombrables panneaux, échoués et dans une langue ancienne, jonchaient sa marche. Personne ne comprenait plus cette langue mais l’on savait ce qu’ils désignaient. Ces écrits des Anciens étaient l’avertissement d’une menace centenaire : celle de la flamme invisible. Une menace qui, bien qu’échappant à la compréhension actuelle, était connue de tous : Une peur transgénérationnelle.
+
+L’élu pu encore déceler sur le sol les restes d’une ancienne barrière de bronze, dorénavant traversable d’un seul pas. À peine le pied posé, un hurlement. Un chien. Des chiens. Ceux-ci étaient sortis de la toundra cendrée pour se jeter devant lui. Ils étaient cinq, grognant, voutés sur leur patte avant, la bouche sèche, les dents fines et la chaire parsemée de poiles rêches. Le héros se prépara à réagir :<</if>>
+
+<div style="text-align: center;">[[dégainer l’épée]]
+[[s’agenouiller et siffler amicalement]] 
+[[observer]]
+[[fuir]]
+</div>
+
+
+
+:: Non {"position":"1800,300","size":"100,100"}
+<<set $statut to "libre">>
+
+<<if $genre is "femme">>« Étonnant. Tu avais l'air si déterminée à accomplir ton destin, et maintenant que c'est fait tu n'en n'est pas satisfaite. Pourquoi cela ? »
+
+[[En fait si, je suis satisfaite d'avoir accompli mon destin mais ... je n'étais pas vraiment prête à mourir|déni]]
+
+[[C'est peut-être un peu tard pour ça mais je me suis rendue compte que cette histoire de prophétie c'est des conneries|lucide]]
+
+<<else>>« Étonnant. Tu avais l'air si déterminé à accomplir ton destin, et maintenant que c'est fait tu n'en n'est pas satisfait. Pourquoi cela ? »
+
+[[En fait si, je suis satisfait d'avoir accompli mon destin mais ... je n'étais pas vraiment prêt à mourir|déni]]
+
+[[C'est peut-être un peu tard pour ça mais je me suis rendu compte que cette histoire de prophétie c'est des conneries|lucide]]
+
+<</if>>
+
+
+:: Oui [code-ok] {"position":"1800,500","size":"100,100"}
+<<if $genre is "femme">>« Nous sommes ravis de l’apprendre. Peu de mortels arrivent à accomplir le but qu’ils s’étaient fixer de leur vivant. Tu peux en être fière. Nous supposons que tu es enfin prête pour ton dernier voyage ?»
+
+[[Oui, je crois être prête à y aller|acceptance]]
+[[Je suis désolée, mais non |déni]]
+
+<<else>>« Nous sommes ravis de l’apprendre. Peu de mortels arrivent à accomplir le but qu’ils s’étaient fixer de leur vivant. Tu peux en être fier. Nous supposons que tu es enfin prêt pour ton dernier voyage ?»
+
+[[Oui, je crois être prêt à y aller|acceptance]]
+[[Je suis désolé, mais non|déni]]
+<</if>>
+
+
+:: Partir de ce monde [code-ok] {"position":"1800,1000","size":"200,200"}
+<<if $statut is "errance" and $genre is "femme">>« Et bien je préfère toujours errer. »
+
+« Si c’est ce que tu souhaites, nous ne pouvons pas t’en empêcher. Prend garde à toi. Adieu. »
+
+« Adieu. »
+
+La cape s’est aplatie sur le sol. Les centaines de rats qui s’y cachaient partent loin de moi et creusent dans le sol avant d’y disparaitre. En un éclair ils étaient tous partis. J’étais seule à présent. Vraiment seule.
+
+Je me mets alors à explorer les lieux, en évitant soigneusement le cœur de la forêt. Si l’horizon lointain est totalement vide, l’îlot renferme d’innombrables tombeaux oubliés. Leurs marques, creusées dans la pierre, n’apparaissent plus que comme des fracas. Les mots se sont effacés avec le temps. J’entends toujours leur appel, au cœur de la forêt. Mais je ne veux pas y aller. Je ne veux pas mourir. Je ne veux pas tomber dans l’oubli. Pas maintenant. Pas encore.<<elseif $statut is "errance" and $genre is "homme">>« Et bien je préfère toujours errer. »
+
+« Si c’est ce que tu souhaites, nous ne pouvons pas t’en empêcher. Prend garde à toi. Adieu. »
+
+« Adieu. »
+
+La cape s’est aplatie sur le sol. Les centaines de rats qui s’y cachaient partent loin de moi et creusent dans le sol avant d’y disparaitre. En un éclair ils étaient tous partis. J’étais seul à présent. Vraiment seul.
+
+Je me mets alors à explorer les lieux, en évitant soigneusement le cœur de la forêt. Si l’horizon lointain est totalement vide, l’îlot renferme d’innombrables tombeaux oubliés. Leurs marques, creusées dans la pierre, n’apparaissent plus que comme des fracas. Les mots se sont effacés avec le temps. J’entends toujours leur appel, au cœur de la forêt. Mais je ne veux pas y aller. Je ne veux pas mourir. Je ne veux pas tomber dans l’oubli. Pas maintenant. Pas encore.<<else>>Je passe à côté du passeur. J'entre dans la forêt. Les arbres dissimulent le ciel, ma pupille s'habitue à l'obscurité. L'air devient tout de suite plus frais. Une brise rafraichie ma peau. Mes poiles s'hérissent. Il y a une odeur de fleur qui s’efface sous les cyprès. Tout devient d'en plus en plus sombre. Le vent continue à siffler contre les tombeaux creusés à même la roche. Ils doivent être si anciens. Ils m'appellent. Tout est plus froid. Tout est plus sombre. Mais quelque part, ça en est réconfortant.
+
+Je m'en vais. Vers ma fin.
+
+<</if>>
+
+
+:: Première mort [code-ok] {"position":"300,900","size":"100,100"}
+<<if $genre is "femme">>Néant. Compressée. Terre dans la bouche. La peau ? Non, la chaire. Lumière. Des centaines de rats. Leur vomi sur le sol. Des morceaux de chaires. C’est moi ? Des centaines de petites mains. Divisée, puis réassemblée. C’est vraiment moi maintenant. Respire. Bouche grande ouverte. Aucun air. Je ne respire plus, et pourtant, tout va bien.
+<<else>>Néant. Compressé. Terre dans la bouche. La peau ? Non, la chaire. Lumière. Des centaines de rats. Leur vomi sur le sol. Des morceaux de chaires. C’est moi ? Des centaines de petites mains. Divisé, puis réassemblé. C’est vraiment moi maintenant. Respire. Bouche grande ouverte. Aucun air. Je ne respire plus, et pourtant, tout va bien.<</if>>
+
+Les rats, ils s’en vont. Le sol est sec, une vieille barque s’y repose. Les rats plongent dessous et disparaissent. Autant que ça sous une si petite barque ? À son intérieur, une coque percée. On y voit au travers l’ocre de la terre. Sur le banc un drap blanc, immaculé, et parfaitement plié. Son éclat m’éblouit. Il fait si jour. Bordel mais où suis-je ? Je tâte le tissu. Il n’y a rien.
+
+Au loin – je vois au loin– une drôle de colline. Un ilot de nature sur une pleine désertique. De grands cyprès s’étendent au-dessus des roches qui les entourent. Mais, on dirait aussi qu’il y a des sortes d’entrées à même la pierre. Les sifflements du vent contre elle m’appellent. Je n’ai pas d’autres endroits où aller de toute façon.
+
+La colline de rochers. Je ne sais pas ce qui me terrifie le plus ici : la grande pleine désertique ou les ombres qui peuplent cet îlot ?
+
+« Bienvenue. » 
+
+Une voix, singulière et aigue. Des ténèbres surgie une silhouette. Un individu encapuchonné d’un large tissu trainant à même le sol. Il s’avance, glisse comme s’il flottait.
+
+« Bienvenue dans l’au-delà. Si tu es ici, c’est que tu as malheureusement trouvé la mort. Mais tu l’avais sans doute déjà compris. »
+
+[[accepter sa mort|acceptance]]
+[[paniquer|Première mort 2]]
+[[délirer|Première mort 2]]
+[[péter un plomb|Première mort 2]]
+
+
+
+
+:: Première mort 2 [code-ok] {"position":"300,1000","size":"100,100"}
+<<if $genre is "femme">>
+« Non, non, non, comment est-ce possible ? Je n’étais pas censée mourir, pas maintenant ! »
+
+« Il s’agit pourtant de la vérité. »
+
+« Je n’y crois pas ! je suis l’élue de la prophétie. Mon destin est de sauver le monde, de ramener le soleil, la vie, mettre fin à la famine, à la maladie, pas de mourir comme une merde ! »
+
+« Tôt ou tard tu étais amenée à mourir, ceci est simplement arrivé plus tôt que tu ne le pensais. Mais ne t’en fais pas, les morts glorieuses n’existent que dans les contes. La maladie, la vieillesse, la faim, le meurtre, l’accident, le suicide : tout cela n’a rien de bien glorieux. En tout cas le cadavre, lui, ne l’est pas. »
+
+
+<<else>>« Non, non, non, comment est-ce possible ? Je n’étais pas censé mourir, pas maintenant ! »
+
+« Il s’agit pourtant de la vérité. »
+
+« Je n’y crois pas ! je suis l’élu de la prophétie. Mon destin est de sauver le monde, de ramener le soleil, la vie, mettre fin à la famine, à la maladie, pas de mourir comme une merde ! »
+
+« Tôt ou tard tu étais amené à mourir, ceci est simplement arrivé plus tôt que tu ne le pensais. Mais ne t’en fais pas, les morts glorieuses n’existent que dans les contes. La maladie, la vieillesse, la faim, le meurtre, l’accident, le suicide : tout cela n’a rien de bien glorieux. En tout cas le cadavre, lui, ne l’est pas. »<</if>>
+
+[[« Mais alors, qu’est ce qui va m’arriver maintenant ? »]]
+
+[[« Ramenez-moi à la vie. »]]
+
+
+
+
+:: Tuer Lev [code-ok] {"position":"1300,400","size":"100,100"}
+<<if $genre is "femme">>L'héroïne poussa le vieil homme dans l’eau. Elle se jeta ensuite sur lui et le transperça de son épée. Lev soupira, et mourut. Par curiosité, l’élue ôta son masque. Celui-ci était trop dur à retirer, il ne faisait qu’un avec le visage de Lev. On y voyait que celui-ci était pâle, rouge et grossi. Il ne devait pas avoir vu beaucoup la lumière dans sa vie.
+
+L’élue s’occupa ensuite de la lumière. D’un grand coup de pied, elle la poussa. En tombant, celle-ci propagea dans l’eau un courant électrique. L’élue succomba.
+
+<<else>>Le héros poussa le vieil homme dans l’eau. Il se jeta ensuite sur lui et le transperça de son épée. Lev soupira, et mourut. Par curiosité, l’élu ôta son masque. Celui-ci était trop dur à retirer, il ne faisait qu’un avec le visage de Lev. On y voyait que celui-ci était pâle, rouge et grossi. Il ne devait pas avoir vu beaucoup la lumière dans sa vie.
+
+L’élu s’occupa ensuite de la lumière. D’un grand coup de pied, il la poussa. En tombant, celle-ci propagea dans l’eau un courant électrique. L’élu succomba.<</if>>
+
+[[succomber|mort en héros]]
+
+
+:: acceptance [code-ok à-modif-avant-de-finir] {"position":"1850,800","size":"100,100"}
+<<if $genre == "femme" and $morts > 1 and $statut == "élu" >>
+« Si tu as encore des doutes c'est bien normal. Mais il ne faut surtout pas, tous les mortels sont voués à cette fin. Nous t'avons accorder un grand privilège en t'offrant la possibilité de revivre. J'espère, enfin nous espérons, que tu as pu en profiter »
+
+« Oui merci mais je ne comprends toujours pas bien pourquoi vous m'avez aidée. Sans votre aide jamais je n'y serais arrivée.»
+
+Le passeur, ou plutot les passeurs se gardent de répondre tout de suite. J'apperçois des tressauts sous leur cape. 
+
+« La réponse dépasse la compréhension des mortels. »
+
+« Vous pouvez toujours essayer. Vous me devez bien ça. J'ai compté et je suis morte <<print $morts >> fois, et à chaque fois de manière horrible. Il doit bien y avoir une raison. Vous n'accorder pas ça à tout le monde quand même ?»
+
+«Tout comme tu dois finir par accepter ta propre mortalité, tu dois accepter que tout n'a pas toujours de sens. »
+
+« Toujours la parole sage quand ça vous arrange. »
+
+« Assez parler. Il est temps pour toi de rejoindre la fin. Quand tu te sentiras vraiment prête, enfonce-toi dans la forêt de cyprès. La fin t'appellera »
+
+<<elseif $genre == "homme" and $morts > 1 and $statut == "élu" >>« Si tu as encore des doutes c'est bien normal. Mais il ne faut surtout pas, tous les mortels sont voués à cette fin. Nous t'avons accorder un grand privilège en t'offrant la possibilité de revivre, encore et encore. J'espère, enfin nous espérons, que tu as pu en profiter »
+
+« Oui mais je ne comprends toujours pas bien pourquoi vous m'avez aidé. Sans votre aide jamais je n'y serais arrivé.»
+
+Le passeur, ou plutot les passeurs se gardent de répondre tout de suite. J'apperçois des tressauts sous leur cape. 
+
+« La réponse dépasse la compréhension des mortels. »
+
+« Vous pouvez toujours essayer. Vous me devez bien ça. J'ai compté et je suis mort <<print $morts >> fois, et à chaque fois de manière horrible. Il doit bien y avoir une raison. Vous n'accorder pas ça à tout le monde quand même ?»
+
+«Tout comme tu dois finir par accepter ta propre mortalité, tu dois accepter que tout n'a pas toujours de sens. »
+
+« Toujours la parole sage quand ça vous arrange. »
+
+« Assez parler. Il est temps pour toi de rejoindre la fin. Quand tu te sentiras vraiment prêt, enfonce-toi dans la forêt de cyprès. La fin t'appellera »
+
+<<elseif $genre == "femme" and $morts > 1 >>« Très bien. Si jamais tu as encore des doutes c'est bien normal. Mais il ne faut surtout pas, tous les mortels sont voués à cette fin. Nous t'avons accorder un grand privilège en t'offrant la possibilité de revivre, econre et encore. J'espère que tu as pu en profiter »
+
+« Oui mais j'ai échoué, j'ai abandonné, je n'ai pas accompli la prophétie, alors pourquoi vous m'avez aidée ? Pourquoi vous m'avez réssucitée si je ne suis pas l'élue ?»
+
+Le passeur, ou plutot les passeurs se gardent de répondre tout de suite. J'apperçois des tressauts sous leur cape. 
+
+« La réponse dépasse la compréhension des mortels. »
+
+« Vous pouvez toujours essayer. Vous me devez bien ça. J'ai compté et je suis morte <<print $morts >> fois, et à chaque fois de manière horrible. Il doit bien y avoir une raison. Vous n'accorder pas ça à tout le monde quand même ?»
+
+«Tout comme tu dois finir par accepter ta propre mortalité, tu dois accepter que tout n'a pas toujours de sens. »
+
+« Toujours la parole sage quand ça vous arrange. »
+
+« Assez parler. Il est temps pour toi de rejoindre la fin. Quand tu te sentiras vraiment prête, enfonce-toi dans la forêt de cyprès. La fin t'appellera »
+
+<<elseif $genre == "homme" and $morts > 1 >>« Très bien. Si jamais tu as encore des doutes c'est bien normal. Mais il ne faut surtout pas, tous les mortels sont voués à cette fin. Nous t'avons accorder un grand privilège en t'offrant la possibilité de revivre, enconre et encore. J'espère que tu as pu en profiter »
+
+« Oui mais j'ai échoué, j'ai abandonné, je n'ai pas accompli la prophétie, alors pourquoi vous m'avez aidé ? Pourquoi vous m'avez réssucité si je ne suis pas l'élu ?»
+
+Le passeur, ou plutot les passeurs se gardent de répondre tout de suite. J'apperçois des tressauts sous leur cape. 
+
+« La réponse dépasse la compréhension des mortels. »
+
+« Vous pouvez toujours essayer. Vous me devez bien ça. J'ai compté et je suis mort <<print $morts >> fois, et à chaque fois de manière horrible. Il doit bien y avoir une raison. Vous n'accorder pas ça à tout le monde quand même ?»
+
+«Tout comme tu dois finir par accepter ta propre mortalité, tu dois accepter que tout n'a pas toujours de sens. »
+
+« Toujours la parole sage quand ça vous arrange. »
+
+« Assez parler. Il est temps pour toi de rejoindre la fin. Quand tu te sentiras vraiment prêt, enfonce-toi dans la forêt de cyprès. La fin t'appellera »
+
+<<elseif $genre == "femme" and $morts == 1 >>« Très bien. Si jamais tu as encore des doutes c'est bien normal. Mais il ne faut surtout pas, tous les mortels sont voués à cette fin. Quand tu te sentiras vraiment prête, enfonce-toi dans la forêt de cyprès. La fin t'appellera »
+
+<<elseif $genre == "homme" and $morts == 1 >>« Très bien. Si jamais tu as encore des doutes c'est bien normal. Mais il ne faut surtout pas, tous les mortels sont voués à cette fin. Quand tu te sentiras vraiment prêt, enfonce-toi dans la forêt de cyprès. La fin t'appellera »<</if>>
+
+[[Partir de ce monde]]
+
+
+
+
+:: combat Sphinx [à-test] {"position":"800,700","size":"100,100"}
+<<set $mort to "sphinx">>
+<<if $genre is "femme">>L'héroïne sortit son épée. Elle monta les escaliers en courant, s'avançant pour attaquer la Sphinx. Celle-ci, pleinement relevée, faisait le double de sa taille et la surplombait. Elle dit :
+
+« J'esperais mieux de toi. »
+
+D'un bond, elle ecrasa l'élue. Ses griffes se plantèrent sur ses jambes, sur son ventre et sur son cou. Puis elle se retira pour aller se remettre sur son piédestal.
+
+À terre et agonisante, les chats se mirent autour de l'élue pour lui lécher le sang.
+<<else>>L'héros sortit son épée. Il monta les escaliers en courant, s'avançant pour attaquer la Sphinx. Celle-ci, pleinement relevée, faisait le double de sa taille et le surplombait. Elle dit :
+
+« J'esperais mieux de toi. »
+
+D'un bond, elle ecrasa l'élu. Ses griffes se plantèrent alors sur ses jambes, sur son ventre et sur son cou. Puis elle se retira pour aller se remettre sur son piédestal.
+
+À terre et agonisant, les chats se mirent autour de l'élu pour lui lécher le sang.
+<</if>>
+[[agoniser|mort]]
+
+
+
+
+
+
+:: dialogue du rat [code-ok] {"position":"800,900","size":"100,100"}
+« Te revoilà. Avant toute chose voyons voir comment tu as trouvé la mort cette fois-ci. »
+L’entité ne bouge plus. Sous sa cape, des dizaines de queues frémissent. Enfin, elle reprend :
+
+<<if $mort is "chien">> « Encore ces chiens. Tu as pensé à changer de tactique ? Nous avouons que nous pourrions te résuciter à un autre moment pour te faciliter la tâche mais nous sommes sûrs que tu es capable d'arriver à bout de cette épreuve. Nous pouvons toutefois te donner un conseil : prends ton temps, observe et n'hésite pas à prendre un peu de recul. Courage, nous sommes de tout coeur avec toi. »
+
+[[Attendez, je ne veux plus y retourner|rat 2]]
+[[On va réessayer alors...|La Zone]]
+
+
+<<elseif $mort is "enigme">>« Ah oui la Sphinx je vois. Tu pouvais difficilement t’en sortir car même en étant expert des énigmes ou de la radioactivité certaines réponses ont été quelque peu altérées par des années de censure. Si tu as besoin d'aide, tend l'oreille et écoutes le vent »
+
+[[Attendez, je ne veux plus y retourner|rat 2]]
+[[Entendu|énigme 1]]
+
+<<elseif $mort is "sphinx">>« Ah oui la Sphinx ... La prochaine fois évite. Tu n’as aucune chance contre elle. »
+
+[[Il n'y aura pas de prochaine fois, je ne veux plus y retourner|rat 2]]
+[[Je l'ai vite compris dès le moment où elle s'est levée... Vous pouvez comptez sur moi pour ne pas répéter cette erreur|énigme 1]]
+
+<<elseif $mort is "temple">>« Je vois. Tu étais si près de ton but. Mais sache que beaucoup d’autres avant toi sont morts dans cette usine abandonnée que vous nommez temple. Ce que vous nommez la Radiance est une matière invisible qui, à grande dose, présente un important risque pour la santé de ton corps. Et figure-toi que ce "temple" en est rempli. L’eau est contaminée, mais aussi tous les meubles. Aussi, plus tu t’approcheras du cœur du temple, plus tu y seras exposé. Tu veux vraiment y retourner ?»
+
+[[Non, je ne veux pas y retourner|rat 2]]
+[[résuciter|temple de Radiance]]
+<</if>>
+
+
+
+
+:: dégainer l’épée [à-test code-ok] {"position":"200,700","size":"100,100"}
+<<if $morts ==2 and $genre is "femme">>
+<<set $statut to "libre">>
+
+L’élue n’étant pas très dégourdie – ni même franchement maline – répéta les erreurs d’un autre temps. Mais les dieux étant avec elle, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui la mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surprise par le propre mouvement de son bras, l’élue contempla sa lame, salie par le sang.
+
+« L’illusion du choix » dit-elle à voix haute. 
+
+« L’illusion du choix » répéta-t-elle plus fort en accentuant chaque syllabe alors même qu’elle était seule. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seule avec le cadavre, l’élue pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour d'elle, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élue jeta un regard derrière elle. Avait-elle peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts ==2 and $genre is "homme">>
+<<set $statut to "libre">>
+
+L’élu n’étant pas très dégourdi – ni même franchement malin – répéta les erreurs d’un autre temps. Mais les dieux étant avec lui, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui le mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surpris par le propre mouvement de son bras, l’élu contempla son épée, sali par le sang.
+
+« L’illusion du choix » dit-il à voix haute. 
+
+« L’illusion du choix » répéta-t-il plus fort en accentuant chaque syllabe alors même qu’il était seul. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seul avec le cadavre, l’élu pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour de lui, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élu jeta un regard derrière lui. Avait-il peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts <2 and $genre is "femme">>>>
+<<set $mort to "chien">>
+
+
+Les molosses s’excitèrent au bruit de l’acier. Le plus grand ayant sauté, les autres suivirent. L’élue tomba, la chaire arrachée par une demi-dizaine d’animaux affamés.
+[[subir|mort]]
+
+<<elseif $morts <2 and $genre is "homme">>>>
+<<set $mort to "chien">>
+
+Les molosses s’excitèrent au bruit de l’acier. Le plus grand ayant sauté, les autres suivirent. L’élu tomba, la chaire arrachée par une demi-dizaine d’animaux affamés.
+
+[[subir|mort]]
+<</if>>
+
+
+
+
+:: déni [code-ok] {"position":"2000,400","size":"100,100"}
+<<if $genre is "femme">>« Pourquoi ne te sens-tu pas prête à mourir ? »
+
+<<else>>« Pourquoi ne te sens-tu pas prêt à mourir ? »<</if>>
+
+[[« C'est peut être un peu tard, mais j'ai des regrets»|lucide]]
+
+[[« Je ... en fait je crois que j'ai juste de la peine à digérer que ça soit là la dernière de mes morts. J'ai juste besoin d'un peu de temps mais ça devrait aller.|acceptance]]
+
+[[« Je ...  Je pense que jamais je ne pourrais m'y faire. Je ne veux juste pas mourir. Je ne vous suivrai pas.»|FIN errance]]
+
+
+:: fuir [à-test] {"position":"400,700","size":"100,100"}
+<<if $morts ==2 and $genre is "femme">>
+<<set $statut to "libre">>
+
+L’élue n’étant pas très dégourdie – ni même franchement maline – répéta les erreurs d’un autre temps. Mais les dieux étant avec elle, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui la mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surprise par le propre mouvement de son bras, l’élue contempla sa lame, salie par le sang.
+
+« L’illusion du choix » dit-elle à voix haute. 
+
+« L’illusion du choix » répéta-t-elle plus fort en accentuant chaque syllabe alors même qu’elle était seule. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seule avec le cadavre, l’élue pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour de elle, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élue jeta un regard derrière elle. Avait-elle peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts ==2 and $genre is "homme">>
+<<set $statut to "libre">>
+
+L’élu n’étant pas très dégourdi – ni même franchement malin – répéta les erreurs d’un autre temps. Mais les dieux étant avec lui, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui le mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surpris par le propre mouvement de son bras, l’élu contempla son épée, sali par le sang.
+
+« L’illusion du choix » dit-il à voix haute. 
+
+« L’illusion du choix » répéta-t-il plus fort en accentuant chaque syllabe alors même qu’il était seul. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seul avec le cadavre, l’élu pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour de lui, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élu jeta un regard derrière lui. Avait-il peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts <2 and $genre is "femme">>>>
+<<set $mort to "chien">>
+
+Les molosses poursuivirent l'héroïne qui s’était mise à courir dans la plaine. Ils avaient beau être maigres, la faim motivait ces chiens. Ils la rattrapèrent et lui sautèrent dessus. L’élue était tombée, la chaire arrachée par une demi-douzaine d’animaux affamés.
+
+[[subir|mort]]
+
+<<elseif $morts <2 and $genre is "homme">>>>
+<<set $mort to "chien">>
+
+Les molosses poursuivirent le héros qui s’était mis à courir dans la plaine. Ils avaient beau être maigres, la faim motivait ces chiens. Ils le rattrapèrent et lui sautèrent dessus. L’élu était tombé, la chaire arrachée par une demi-douzaine d’animaux affamés.
+
+[[subir|mort]]
+
+<</if>>
+
+
+:: intérieur [code-ok] {"position":"1200,400","size":"100,100"}
+<<if $genre is "femme">>Le temple de Radiance, enfin. Il y faisait grand sombre. Seuls les vitres de la porte permettaient au faux-jour de pénétrer en ces lieux. L’élue alluma une lampe-projectante, de celle qui jette une lumière là où l’on souhaite jusqu’à ne plus en avoir. La poussière flottait en face du faisceau. Malgré le vert des murs et du sol, tout était aussi terne que l’extérieur. L’air quant à lui était lourd. Une odeur de brûlé persistait en ces murs, accentuée par le renfermé.
+
+Etonnamment, le temple n’avait pas l’air d’avoir été pillé. La Sphinx, les soldats nocturnes, ou la malédiction de la flamme invisible devaient avoir protégé ce lieu. Les meubles tenaient pour la plupart encore debout, et étaient remplis d’objet étranges et de papier écrits en une langue ancienne. Ils demeuraient toutefois fragilisés par le temps. Un simple toucher pouvait les émietter.
+
+L’élue s’enfonça dans le couloir, jonché de salles pleines de tables, jusqu’à arriver à une cage d’escalier. Les panneaux qui indiquaient les directions étaient bien sûr illisibles. Mais de toute façon l'escalier du haut étant condamné, seule celui du bas était accessible. Celui-ci donnait sur un étage à moitié plongé sous une eau opaque et brune.
+
+Tout en bas des escaliers, l’élue ne pouvait prétendre à faire un pas de plus sans plonger jusqu’à son ventre dans l’eau. La radiance était sans aucun doute en cette eau, mais tant qu’elle ne la buvait pas elle ne pouvait lui faire du mal. Non sans un certain dégout, elle s’immergea. Tout de suite, elle fut parcourue d’un frisson. L’eau était froide mais c’est son aspect opaque qui la mit en état d’alerte. Et si quelque chose se cachait dans l’eau ?
+
+Malgré sa lumière, l’élue n’était capable que de voir les ondulations qu’elle provoquait dans l’eau en avançant, jusqu’à arriver dans un gigantesque néant sans fond.
+
+Soudain, un flash. Une lumière puissante, vive, marquant les contours de la salle. Des centaines de sarcophages, debout, se tenaient hors de l’eau. Le flash ne dura qu’un instant, mais provenait clairement de leur centre. À mesure que l’héroïne avançait, elle sentit que l’eau se réchauffait légèrement, passant de glaciale à très froide, puis de très froide à froide. Là, elle se figea. Alors que sa lampe s’était éteinte d’épuisement : un nouveau flash. Une ombre. Celle d’un homme, se tenant au-dessus des monolithes. Il marqua la rétine de l’élue. La voix tremblante, l’héroïne s’annonça :
+
+« Je viens en paix ! La Sphinx, enfin la femme, m’a laissée entrer. »
+
+Encore un flash. Sans avoir avancé, l’eau était devenue tiède. 
+
+« Ta lampe. Elle est morte. » dit une voix graveleuse, porteuse d’un accent jusque-là jamais entendu de l’élue. Cette voix continua :
+
+« Viens par ici. Je vais faire briller la flamme. Elle ne peut plus me brûler. Elle ne brûle plus ! »
+
+« C’est normal que l’eau se réchauffe ? »
+
+« Elle ne brûle plus je te dis. Viens. »
+
+Dans le noir total, l’élue avança, s’approchant de la voix. Elle percuta de sa jambe l’un des sarcophages.
+« Attends. » dit la voix, à présent si proche. 
+Ses pas, tapant contre la pierre, s’éloignèrent. L’élue tenait fermement l’épée à son fourreau.
+
+Un autre flash, bien plus faible mais tenace. La lumière était chaude et ne s’éteignit plus, permettant de voir dans un rayon de cinq mètres. La silhouette de l’homme se rapprocha de nouveau. A contre-jour, l’élue ne pouvait pas encore le distinguer clairement. Il avait toutefois l’air de porter une imposante combinaison, ainsi qu’un casque. Les pieds à nouveau au niveau de la tête de l’héroïne, l’homme lui tendit son bras.
+« Monte. »
+
+Quand l’élue lui prit la main, elle sentit qu’elle était spongieuse. Cela donnait l’impression que si elle tirait assez fort, elle pourrait la lui arracher. Malgré tout, l’homme avait une certaine force, et réussit à ramener l’élue au-dessus des sarcophages. 
+
+« Je m’appelle Lev. Et toi ? »
+
+L’élue lui donna son nom. Ensemble ils se tenaient à présent devant le centre des monolithes. Ceux-ci se tenaient en cercle autour d’une machine montée sur un pique avec à son sommet un cylindre projetant de la lumière à la manière d’une lampe-projectante.
+
+« Tu as déjà vu une lumière pareille ? »
+
+« Non, jamais. C’est incroyable. »
+
+« Je sais. Et elle dure bien plus longtemps qu’une lampe de poche, à condition qu’elle soit branchée bien sûr. »
+
+« Branchée ? »
+
+« Tu vois le socle sur lequel est posé le trépied ? C’est la batterie. Elle alimente la lampe en électricité, ce qui permet de faire de la lumière. »
+
+« Incroyable. Ça crée de la chaleur aussi ? »
+
+« Oui, mais c’est pas son usage premier. Pour produire de l’énergie il y a toujours une perte en chaleur. Selon le niveau de puissance il faut pouvoir refroidir la machine pour pas qu’elle crame. »
+
+« Ah c’est donc pour ça qu’elle est dans l’eau »
+
+« Oui. »
+
+« Mais alors la lumière brûle un peu ? »
+
+« Oui un peu, après c’est pas comme si c’était du feu non plus. Faut juste pas y foutre le doigt. Mais si c’est seulement la chaleur qui t’intéresse je peux te montrer un radiateur. »
+
+« Le radiateur ne fait pas de la lumière mais brûle ? »
+
+« Oui enfin il ne brûle pas à part si tu le règle comme un malade. En fait ce qui t’intéresse c’est la flamme invisible, c’est ça ? »
+
+« Oui. »
+
+« Et bien tu l’as déjà eu sous les yeux quand tu as vu les gros flashs de lumière. La flamme invisible c’est pas la fin mais le moyen. Grâce à mon prototype j’ai pu produire pendant une fraction de seconde cette lumière en m’inspirant de ce que les Anciens avaient fait. »
+
+« Mais, il ne faut pas ! Tu n’as jamais lu la prophétie ? »
+
+« Oui, mais on peut pas dire que ça soit une source très claire sur ce que les Anciens voulaient. Chacun l’interprète à sa sauce de toute façon. »
+
+« Non, il faut tout arrêter. C’est à cause de ça que tout devient stérile maintenant.
+
+Lev s’agita :
+
+« Alors oui mais non. C’est à cause de ce que les Anciens ont en fait qu’on se tape encore les retombées de leurs conneries maintenant ! Moi je veux juste qu’on puisse produire de l’électricité pour que tout le monde puisse vivre enfin avec un peu de lumière et de chaleur ! Le monde est déjà foutu de toute façon. C’était il y a des siècles qu’il fallait tout éteindre, maintenant c’est trop tard. »
+
+« Je suis désolée mais je dois sauver le monde. »
+
+« Tu ne m’as pas écouté. C’est trop tard. Les humains vont disparaitre quoi que tu fasses. Et c’est pas en sabotant l’œuvre de ma vie que tu vas y changer quelque chose. »
+
+<<else>>Le temple de Radiance, enfin. Il y faisait grand sombre. Seuls les vitres de la porte permettaient au faux-jour de pénétrer en ces lieux. L’élu alluma une lampe-projectante, de celle qui jette une lumière là où l’on souhaite jusqu’à ne plus en avoir. La poussière flottait en face du faisceau. Malgré le vert des murs et du sol, tout était aussi terne que l’extérieur. L’air quant à lui était lourd. Une odeur de brûlé persistait en ces murs, accentuée par le renfermé.
+
+Etonnamment, le temple n’avait pas l’air d’avoir été pillé. La Sphinx, les soldats nocturnes, ou la malédiction de la flamme invisible devaient avoir protégé ce lieu. Les meubles tenaient pour la plupart encore debout, et étaient remplis d’objet étranges et de papier écrits en une langue ancienne. Ils demeuraient toutefois fragilisés par le temps. Un simple toucher pouvait les émietter.
+
+L’élu s’enfonça dans le couloir, jonché de salles pleines de tables, jusqu’à arriver à une cage d’escalier. Les panneaux qui indiquaient les directions étaient bien sûr illisibles. Mais de toute façon l'escalier du haut étant condamné, seule celui du bas était accessible. Celui-ci donnait sur un étage à moitié plongé sous une eau opaque et brune.
+
+Tout en bas des escaliers, l’élu ne pouvait prétendre à faire un pas de plus sans plonger jusqu’à son ventre dans l’eau. La radiance était sans aucun doute en cette eau, mais tant qu’il ne la buvait pas elle ne pouvait lui faire du mal. Non sans un certain dégout, il s’immergea. Tout de suite, il fut parcouru d’un frisson. L’eau était froide mais c’est son aspect opaque qui le mit en état d’alerte.Et si quelque chose se cachait dans l’eau ?
+
+Malgré sa lumière, l’élu n’était capable que de voir les ondulations qu’il provoquait dans l’eau en avançant, jusqu’à arriver dans un gigantesque néant sans fond.
+
+Soudain, un flash. Une lumière puissante, vive, marquant les contours de la salle. Des centaines de sarcophages, debout, se tenaient hors de l’eau. Le flash ne dura qu’un instant, mais provenait clairement de leur centre. À mesure que le héros avançait, il sentit que l’eau se réchauffait légèrement, passant de glaciale à très froide, puis de très froide à froide. Là, il se figea. Alors que sa lampe s’était éteinte d’épuisement : un nouveau flash. Une ombre. Celle d’un homme, se tenant au-dessus des monolithes. Il marqua la rétine de l’élu. La voix tremblante, le héros s’annonça :
+
+« Je viens en paix ! La Sphinx, enfin la femme, m’a laissé entrer. »
+
+Encore un flash. Sans avoir avancer, l’eau était devenue tiède. 
+
+« Ta lampe. Elle est morte. » dit une voix graveleuse, porteuse d’un accent jusque-là jamais entendu de l’élu. Cette voix continua :
+
+« Viens par ici. Je vais faire briller la flamme. Elle ne peut plus me brûler. Elle ne brûle plus ! »
+
+« C’est normal que l’eau se réchauffe ? »
+
+« Elle ne brûle plus je te dis. Viens. »
+
+Dans le noir total, l’élu avança, s’approchant de la voix. Il percuta de sa jambe l’un des sarcophages.
+« Attends. » dit la voix, à présent si proche. 
+Ses pas, tapant contre la pierre, s’éloignèrent. L’élu tenait fermement l’épée à son fourreau.
+
+Un autre flash, bien plus faible mais tenace. La lumière était chaude et ne s’éteignit plus, permettant de voir dans un rayon de cinq mètres. La silhouette de l’homme se rapprocha de nouveau. A contre-jour, l’élu ne pouvait pas encore le distinguer clairement. Il avait toutefois l’air de porter une imposante combinaison, ainsi qu’un casque. Les pieds à nouveau au niveau de la tête du héros, l’homme lui tendit son bras.
+« Monte. »
+
+Quand l’élu lui prit la main, il sentit qu’elle était spongieuse. Cela donnait l’impression que s’il tirait assez fort, il pourrait la lui arracher. Malgré tout, l’homme avait une certaine force, et réussit à ramener l’élu au-dessus des sarcophages. 
+
+« Je m’appelle Lev. Et toi ? »
+
+L’élu lui donna son nom. Ensemble ils se tenaient à présent devant le centre des monolithes. Ceux-ci se tenaient en cercle autour d’une machine montée sur un pique avec à son sommet un cylindre projetant de la lumière à la manière d’une lampe-projectante.
+
+« Tu as déjà vu une lumière pareille ? »
+
+« Non, jamais. C’est incroyable. »
+
+« Je sais. Et elle dure bien plus longtemps qu’une lampe de poche, à condition qu’elle soit branchée bien sûr. »
+
+« Branchée ? »
+
+« Tu vois le socle sur lequel est posé le trépied ? C’est la batterie. Elle alimente la lampe en électricité, ce qui permet de faire de la lumière. »
+
+« Incroyable. Ça crée de la chaleur aussi ? »
+
+« Oui, mais c’est pas son usage premier. Pour produire de l’énergie il y a toujours une perte en chaleur. Selon le niveau de puissance il faut pouvoir refroidir la machine pour pas qu’elle crame. »
+
+« Ah c’est donc pour ça qu’elle est dans l’eau »
+
+« Oui. »
+
+« Mais alors la lumière brûle un peu ? »
+
+« Oui un peu, après c’est pas comme si c’était du feu non plus. Faut juste pas y foutre le doigt. Mais si c’est seulement la chaleur qui t’intéresse je peux te montrer un radiateur. »
+
+« Le radiateur ne fait pas de la lumière mais brûle ? »
+
+« Oui enfin il ne brûle pas à part si tu le règle comme un malade. En fait ce qui t’intéresse c’est la flamme invisible, c’est ça ? »
+
+« Oui. »
+
+« Et bien tu l’as déjà eu sous les yeux quand tu as vu les gros flashs de lumière. La flamme invisible c’est pas la fin mais le moyen. Grâce à mon prototype j’ai pu produire pendant une fraction de seconde cette lumière en m’inspirant de ce que les Anciens avaient fait. »
+
+« Mais, il ne faut pas ! Tu n’as jamais lu la prophétie ? »
+
+« Oui, mais on peut pas dire que ça soit une source très claire sur ce que les Anciens voulaient. Chacun l’interprète à sa sauce de toute façon. »
+
+« Non, il faut tout arrêter. C’est à cause de ça que tout devient stérile maintenant.
+
+Lev s’agita :
+
+« Alors oui mais non. C’est à cause de ce que les Anciens ont en fait qu’on se tape encore les retombées de leurs conneries maintenant ! Moi je veux juste qu’on puisse produire de l’électricité pour que tout le monde puisse vivre enfin avec un peu de lumière et de chaleur ! Le monde est déjà foutu de toute façon. C’était il y a des siècles qu’il fallait tout éteindre, maintenant c’est trop tard. »
+
+« Je suis désolé mais je dois sauver le monde. »
+
+« Tu ne m’as pas écouté. C’est trop tard. Les humains vont disparaitre quoi que tu fasses. Et c’est pas en sabotant l’œuvre de ma vie que tu vas y changer quelque chose. »<</if>>
+
+<div style="text-align: center;">[[Détruir la machine de Lev]]
+[[Tuer Lev]]
+[[Abandonner]]</div>
+
+
+
+
+:: l'ultime lueur [à-test] {"position":"1600,400","size":"100,100"}
+<<if $genre is "femme" and $morts== 0>>Néant. Compressée. Terre dans la bouche. La peau ? Non, la chaire. Lumière. Des centaines de rats. Leur vomi sur le sol. Des morceaux de chaires. C’est moi ? Des centaines de petites mains. Divisée, puis réassemblée. C’est vraiment moi maintenant. Respire. Bouche grande ouverte. Aucun air. Je ne respire plus, et pourtant, tout va bien.
+
+Des ténèbres surgie une silhouette. Un individu encapuchonné d’un large tissu trainant à même le sol. Il s’avance, glisse comme s’il flottait. Une voix, singulière et aigue :
+
+« Félicitation. Tu as enfin accompli ton destin. En es-tu satisfaite ? »
+
+<<elseif $genre is "homme" and $morts==0>>Néant. Compressé. Terre dans la bouche. La peau ? Non, la chaire. Lumière. Des centaines de rats. Leur vomi sur le sol. Des morceaux de chaires. C’est moi ? Des centaines de petites mains. Divisé, puis réassemblé. C’est vraiment moi maintenant. Respire. Bouche grande ouverte. Aucun air. Je ne respire plus, et pourtant, tout va bien.
+
+Des ténèbres surgie une silhouette. Un individu encapuchonné d’un large tissu trainant à même le sol. Il s’avance, glisse comme s’il flottait. Une voix, singulière et aigue :
+
+« Félicitation. Tu as enfin accompli ton destin. En es-tu satisfait ? »
+
+<<elseif $genre is "femme" and $morts !=0>>De retour dans le monde des morts. 
+
+« Félicitation. Tu as enfin accompli ton destin. En es-tu satisfaite ? »
+
+<<elseif $genre is "homme" and $morts !=0>>De retour dans le monde des morts. 
+
+« Félicitation. Tu as enfin accompli ton destin. En es-tu satisfait ? »<</if>>
+
+[[Oui]]
+[[Non]]
+
+
+:: la dernière mort [incomplet] {"position":"1300,700","size":"100,100"}
+<<if $genre is "femme" and $morts is 0>>Néant. Compressée. Terre dans la bouche. La peau ? Non, la chaire. Lumière. Des centaines de rats. Leur vomi sur le sol. Des morceaux de chaires. C’est moi ? Des centaines de petites mains. Divisée, puis réassemblée. C’est vraiment moi maintenant. Respire. Bouche grande ouverte. Aucun air. Je ne respire plus, et pourtant, tout va bien.
+
+Des ténèbres surgie une silhouette. Un individu encapuchonné d’un large tissu trainant à même le sol. Il s’avance, glisse comme s’il flottait. Une voix, singulière et aigue :
+
+« Bienvenue dans le monde des morts. Viens ici, il est l'heure de partir »
+
+[[accepter la fin|Partir de ce monde]]
+
+<<elseif $genre is "homme" and $morts is 0>>Néant. Compressée. Terre dans la bouche. La peau ? Non, la chaire. Lumière. Des centaines de rats. Leur vomi sur le sol. Des morceaux de chaires. C’est moi ? Des centaines de petites mains. Divisée, puis réassemblée. C’est vraiment moi maintenant. Respire. Bouche grande ouverte. Aucun air. Je ne respire plus, et pourtant, tout va bien.
+
+Des ténèbres surgie une silhouette. Un individu encapuchonné d’un large tissu trainant à même le sol. Il s’avance, glisse comme s’il flottait. Une voix, singulière et aigue :
+
+« Bienvenue dans le monde des morts. Viens ici, il est l'heure de partir »
+
+[[accepter la fin|Partir de ce monde]]
+
+<<elseif $genre is "femme" and $morts !=0>>
+
+« Nous avons vu que tu as pu passer les derniers instants de ta vie avec les tiens. Si tu en es satisfaite, es tu prête à moruir ?»
+
+
+[[Oui, je crois|acceptance]]
+[[Non, je ne crois pas|FIN errance]]
+
+<<elseif $genre is "homme" and $morts !=0>>
+
+« Nous avons vu que tu as pu passer les derniers instants de ta vie avec les tiens. Si tu en es satisfait, es tu prête à mourir ?»
+
+[[Oui, je crois|acceptance]]
+[[Non, je ne crois pas|FIN errance]]
+<</if>>
+
+
+
+
+:: la prophétie [code-ok] {"position":"100,300","size":"100,100"}
+ 	<!-- tout le code de ce passage a été fait avec Chatgpt  -->
+    <<set $morts to 0>>
+    
+    Des années de guerres eurent raison de l’humain. Si au départ le bronze et le fer ne pouvaient que menacer la chaire et le bois, il en fut autrement quand des bombes tombées du ciel se creusèrent de nouvelles mers dénuées d’eau. Mais un espoir subsistait dans ces terres asséchées. L’espoir d’un individu promis à les sauver tous. Ainsi, l’on pouvait lire sur l’une des plaques les moins muselées par le temps les restes d’une prophétie qui ne cessa de trouver de nouveaux échos dans le cœur de chacun. En voici l'une des nombreuses interprétations  :
+
+//[Ses] cheveux [blanchis par l]es cieux, [son] teint [pâle], contrasteront de la nuit qui règne depuis [trop long]temps sur le monde.
+    
+ 	Épée [et] lanc[e] en mains, [il/elle] répandr[a la mort] sur les soldats nocturnes pour mieux redo[nner le] sourire à la lune.
+    
+ 	D’un grand [courage][elle/i[l] [se] dot[era], et [à la] tour [rayon]nante [elle/il ira].
+    
+ 	Là-bas, il[ é]tein[dra l]a fausse flamme, celle qui ne brille pas mais qui pour[tant] brûle.
+    
+ 	Alors, le c[rane] rayonnant, [elle/ il se] couron[nera en roi de] ce monde, et de [son] propre [sang] de nouveaux fleuves couleront
+    
+    
+<div style="text-align: right;">permettant à un futur d’immerger. </div>
+    
+Un individu unique lu ces mots. Qu'un par millénaire. C'était ...
+
+<div style="text-align: center;"><<link "une femme">>
+	<<set $genre to "femme">>
+	<<goto "situation initiale">>
+<</link>>
+<<link "un homme">>
+	<<set $genre to "homme">>
+	<<goto "situation initiale">>
+<</link>>
+</div>
+
+
+
+
+:: libre [code-ok] {"position":"1200,700","size":"100,100"}
+<<set $statut to "abandon">><<if $genre is "femme">>« J’abandonne. »L’héroïne se retourna et partit. Etonnant. Après une longue marche, elle laissa derrière elle la Zone, et s’éloigna de la radiance et de sa grâce présumée. Sans se retourner, elle avança à contre-courant de son destin. Très étonnant.
+
+Alors elle marcha, marcha, et marcha encore sans s’arrêter, le souffle court, déterminée. Des jours plus tard, elle se retrouva enfin dans son village natal, celui qui avait porté ses premiers espoirs. Rien n’avait vraiment changé : quelques planches en moins, quelques trous en plus. Des habitants l’aperçurent, coururent auprès d’elle, et lui sautèrent dessus. C’étaient des amis, de la famille, des proches, des êtres aimés. Tous étaient heureux de la retrouver. Elle en fut émue. L’on passa la nuit à la dorloter, la chouchouter, l’interroger, l’amuser, la nourrir. L’on avait organisé une fête improvisée en son honneur. Les lanternes perçaient l’obscurité tandis que la brume s’était ramollie. Attroupés autour d’une grande table, les plats cuits autour d’un imposant bûcher : pour la première fois il semblait que l’été était revenu en ces terres taries par ces nuages nés d’une autre ère.
+
+« J’ai peur de ne pas avoir fait assez pour vous » lâcha-t-elle à ses proches. Ensuite de quoi certains lui répondirent qu’elle n’avait pas à s’en faire, que passer du moment ensemble était tout ce qui comptait à présent.
+
+Elle eut une lancée dans le ventre. S’écarta du groupe. Vomit. Tout va toujours trop vite.
+
+L’on s’inquiéta, on la mit au lit, on s’en occupa pendant deux jours, puis elle mourut, cette fois entourés de ceux qu’elle aime.
+
+On n’a pas toujours le temps de faire tout ce que l’on souhaite. A son incinération une amitié de longue date prononça un discours en son honneur : 
+
+« Pendant six mois elle s’est battue. Pendant six mois tu t’es battue. Battue contre la maladie. Tu ne pouvais pas gagner mais tu as fait de ton mieux. Maintenant c’est à moi de me battre. À moi de me battre sans toi, en ton souvenir, pour ton souvenir. De continuer à avancer.  Ça ne va pas être facile, mais moi aussi je vais faire de mon mieux. J'espère vraiment qu'on se reverra. Je t'aime. »<<else>>« J’abandonne. »Le héros se retourna et partit. Etonnant. Après une longue marche, il laissa derrière lui la Zone, et s’éloigna de la radiance et de sa grâce présumée. Sans se retourner, il avança à contre-courant de son destin. Très étonnant.
+
+Alors il marcha, marcha, et marcha encore sans s’arrêter, le souffle court, déterminé. Des jours plus tard, il se retrouva enfin dans son village natal, celui qui avait porté ses premiers espoirs. Rien n’avait vraiment changé : quelques planches en moins, quelques trous en plus. Des habitants l’aperçurent, coururent auprès de lui, et lui sautèrent dessus. C’étaient des amis, de la famille, des proches, des êtres aimés. Tous étaient heureux de le retrouver. Il en fut ému. L’on passa la nuit à le dorloter, le chouchouter, l’interroger, l’amuser, le nourrir. L’on avait organisé une fête improvisée en son honneur. Les lanternes perçaient l’obscurité tandis que la brume s’était ramollie. Attroupés autour d’une grande table, les plats cuits autour d’un imposant bûcher : pour la première fois il semblait que l’été était revenu en ces terres taries par ces nuages nés d’une autre ère.
+
+« J’ai peur de ne pas avoir fait assez pour vous » lâcha-t-il à ses proches. Ensuite de quoi certains lui répondirent qu’il n’avait pas à s’en faire, que passer du moment ensemble était tout ce qui comptait à présent.
+
+Il eut une lancée dans le ventre. S’écarta du groupe. Vomit. Tout va toujours trop vite.
+
+L’on s’inquiéta, on le mit au lit, on s’en occupa pendant deux jours, puis il mourut, cette fois entourés de ceux qu’il aime.
+
+On n’a pas toujours le temps de faire tout ce que l’on souhaite. A son incinération une amitié de longue date prononça un discours en son honneur : 
+
+« Pendant six mois il s’est battu. Pendant six mois tu t’es battu. Battu contre la maladie. Tu ne pouvais pas gagner mais tu as fait de ton mieux. Maintenant c’est à moi de me battre. À moi de me battre sans toi, en ton souvenir, pour ton souvenir. De continuer à avancer.  Ça ne va pas être facile, mais moi aussi je vais faire de mon mieux. J'espère vraiment qu'on se reverra. Je t'aime. » <</if>>
+
+[[la dernière mort]]
+
+
+
+:: lucide [code-ok] {"position":"2000,200","size":"100,100"}
+« C'est un peu tard en effet. Quels genres de regrets as-tu ?»
+
+« Des tonnes. J’aurais aimé faire plus. J’aurai aimé apprendre plus. Apprendre sur le monde. Apprendre sur mes proches. Apprendre sur moi. J’aurais aimé profiter plus. Profiter avec ceux que j’aime. Profiter du temps qu’il me restait à vivre. Profiter sans me soucier de mes problèmes, des problèmes qui m’entourent. Vivre. Vivre dans un monde qui ne m’impose pas de passer plus de temps à compter sur la survie de moi et de mes proches qu’à vraiment vivre. J’avais des tonnes de rêves, des tonnes d’espoirs, des tonnes de projets inachevés. Et putain j’étais si jeune. Si jeune que l’idée de limite ne m’étais même pas encore venue à l’esprit. Enfin jusqu’à ce que je tombe malade. 
+Mais même là. Même quand je savais que j’allais mourir, que je comptais les jours, que je savais que je n’aurais jamais le temps de réaliser tous mes rêves, que je ne serais bientôt plus là pour voir vieillir ma famille, mes amis, que je ne serais plus là pour mes animaux, pour les nourrir et jouer avec eux, pour arroser mes plantes, pour rigoler avec mes meilleurs amis, pour tenir dans mes bras chacun de ceux que j’aime, même là, même là j’ai été surpris par mes propres limites, même là j’avais l’arrogance de croire que je pouvais faire bien plus, que j’étais bien plus. J’avais encore tant à faire. Je voulais leur laisser un monde meilleur. Je voulais qu’on se souvienne de moi. Je voulais mourir en ayant eu l’impression d’avoir réaliser de grande chose. Mourir sans regrets. Mais, même là, c’est encore raté. »
+
+Les larmes me coulent jusque sous mon cou. J’ai si mal à la gorge. L’ombre, elle, ne fait que me renvoyer mon regard. Ses silences sont souvent longs avant de reprendre la parole.
+
+« Et si tu pouvais recommencer – tout recommencer – qu’est-ce que tu ferais différemment ? »
+
+[[« Je crois que malgré tous, je ne changerais rien. »]]
+
+[[« Je crois que je rentrai juste chez moi. J’aurais juste aimé voir mes proches une dernière fois. Pouvoir les serrer dans mes bras rien qu’un jour de plus. »]]
+
+[[« Absolument tout. »]]
+
+
+
+
+:: mort [code-ok à-modif-avant-de-finir] {"position":"600,900","size":"100,100"}
+	<!-- les lignes de code timed et goto on été faite avec chatGPT  -->
+<<set $morts to $morts + 1>>
+<<if $morts == 1>>
+Une éternité de noir qui s'écoule en une fraction de seconde.
+Un corps qui ne peut ressentir les milliards de morsures du temps contre sa chaire, rongeant jusqu'à la structure de ses os.
+Plus. Plus de ce monde.
+<<timed 11s>>
+<<goto "Première mort">><</timed>>
+
+<<elseif $statut is "abandon">>
+
+Tout va toujours trop vite
+<<timed 6s>><<goto "la dernière mort">><</timed>>
+
+<<elseif $morts > 1>>
+Et là, vint la mort.
+<<timed 3s>><<goto "dialogue du rat">><</timed>>
+
+
+<</if>>
+
+
+
+:: mort en héros [code-ok] {"position":"1500,400","size":"100,100"}
+<<set $statut to "élu">>
+
+<<if $genre is "femme">>Et c'est ainsi que la vaillente héroïne mourut, en ayant accompli la prophétie, atteint son rêve, et répondu aux attentes de ses ancêtres. Malheureusement, ni les siens ni elle n'étaient en mesure de s'en réjouir. La mort était la nouvelle et dernière épreuve qui l'attendait, celle où toutes les quêtes s'achèvent et où tous les destins convergent.
+
+
+<<else>>Et c'est ainsi que le vaillant héros mourut, en ayant accompli la prophétie, atteint son rêve, et répondu aux attentes de ses ancêtres. Malheureusement, ni les siens ni lui n'étaient en mesure de s'en réjouir. La mort était la nouvelle et dernière épreuve qui l'attendait, celle où toutes les quêtes s'achèvent et où tous les destins convergent.<</if>>
+
+[[mourir|l'ultime lueur]] 
+
+
+:: mort enola [code-ok] {"position":"800,500","size":"100,100"}
+<<set $mort to "enigme">>
+« Enola Gay ? Gay ? Mais tu inventes des mots là ! C’était Enola Straight. Désolée, mais tu vas devoir mourir. »
+
+<<if $genre is "femme">>La Spinx bondit sur la perdante pour lui couper la nuque d'un coup de griffe. À terre et agonisante, les chats se mirent autour pour lui lécher le sang.
+<<else>>La Spinx bondit sur le perdant pour lui couper la nuque d'un coup de griffe. À terre et agonisant, les chats se mirent autour pour lui lécher le sang.
+<</if>>
+[[agoniser|mort]]
+
+
+:: mort énigme [code-ok] {"position":"800,600","size":"100,100"}
+<<set $mort to "enigme">>
+
+«Mauvaise réponse. Désolée mais tu vas devoir mourir.»
+
+<<if $genre is "femme">>La Spinx bondit sur la perdante pour lui couper la nuque d'un coup de griffe. À terre et agonisante, les chats se mirent autour pour lui lécher le sang.
+<<else>>La Spinx bondit sur le perdant pour lui couper la nuque d'un coup de griffe. À terre et agonisant, les chats se mirent autour pour lui lécher le sang.
+<</if>>
+[[agoniser|mort]]
+
+
+
+:: observer [code-ok] {"position":"300,400","size":"100,100"}
+Les molosses grognèrent toujours. Autour, seulement la toundra et sa flore qui peinait à se tenir droite. Plus loin dans la Zone, à environ mille pas d’ici, de grands piques sortaint du sol. Et en arrière, les restes des panneaux ayant été grignotés par le temps.
+
+[[dégainer l’épée]]
+[[s’agenouiller et siffler amicalement]]
+[[fuir vers les piques|fuir]]
+[[fuir en dehors de la Zone|fuir]]
+[[reculer en douceur]]
+
+
+
+:: rat 2 [code-ok] {"position":"800,1100","size":"100,100"}
+<<if $genre is "femme">>« Tu ne veux vraiment plus y retourner ? Alors tu te sens prête à mourir pour de bon ?»
+
+<<else>>« Tu ne veux vraiment plus y retourner ? Alors tu te sens prêt à mourir pour de bon ?»<</if>>
+
+[[Je crois oui|acceptance]]
+[[En fait non, ramenez moi encore une fois à la vie s'il vous plaît|retour à la vie]]
+
+
+:: reculer en douceur [code-ok] {"position":"400,400","size":"100,100"}
+<<if $genre is "femme">>Alors que l'héroïne reculait, les chiens s’avançaient. Sous son pied un claquement métallique : un écriteau des Anciens. <<else>>Alors que le héros reculait, les chiens s’avançaient. Sous son pied un claquement métallique : un écriteau des Anciens.<</if>>
+
+[[dégainer l’épée]]
+[[s’agenouiller et siffler amicalement]]
+[[fuir vers les piques |fuir]]
+[[fuir en dehors de la Zone |fuir]]
+[[récupérer le panneau]]
+[[reculer encore]]
+
+
+
+
+:: reculer encore [à-test] {"position":"500,700","size":"100,100"}
+<<if $morts ==2 and $genre is "femme">>
+<<set $statut to "libre">>
+
+L’élue n’étant pas très dégourdie – ni même franchement maline – répéta les erreurs d’un autre temps. Mais les dieux étant avec elle, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui la mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surprise par le propre mouvement de son bras, l’élue contempla sa lame, salie par le sang.
+
+« L’illusion du choix » dit-elle à voix haute. 
+
+« L’illusion du choix » répéta-t-elle plus fort en accentuant chaque syllabe alors même qu’elle était seule. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seule avec le cadavre, l’élue pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour d'elle, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élue jeta un regard derrière elle. Avait-elle peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts ==2 and $genre is "homme">>
+<<set $statut to "libre">>
+
+L’élu n’étant pas très dégourdi – ni même franchement malin – répéta les erreurs d’un autre temps. Mais les dieux étant avec lui, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui le mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surpris par le propre mouvement de son bras, l’élu contempla son épée, sali par le sang.
+
+« L’illusion du choix » dit-il à voix haute. 
+
+« L’illusion du choix » répéta-t-il plus fort en accentuant chaque syllabe alors même qu’il était seul. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seul avec le cadavre, l’élu pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour de lui, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élu jeta un regard derrière lui. Avait-il peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts <2 and $genre is "femme">>>>
+<<set $mort to "chien">>
+
+L’élue trébucha. Aussitôt les molosses lui sautèrent dessus. Ils lui arrachèrent la chaire, craquèrent ses os, jusqu'à n'en plus laisser aucune miette. Ils étaient affamés.
+
+[[subir|mort]]
+
+<<elseif $morts <2 and $genre is "homme">>>>
+<<set $mort to "chien">>
+
+L’élu trébucha. Aussitôt les molosses lui sautèrent dessus. Ils lui arrachèrent la chaire, craquèrent ses os, jusqu'à n'en plus laisser aucune miette. Ils étaient affamés.
+
+[[subir|mort]]
+
+<</if>>
+
+
+
+
+
+:: retour à la vie [à-test] {"position":"1000,900","size":"100,100"}
+<<if $mort is "chien">> 
+	<<goto "La Zone">>
+
+
+<<elseif $mort is "enigme">>
+	<<goto "énigme 1">>
+
+
+<<elseif $mort is "sphinx">>
+	<<goto "énigme 1">>
+
+
+<<elseif $mort is "destin">>
+	<<goto "temple de Radiance">>
+    
+<</if>>
+
+
+
+
+:: récupérer le panneau [code-ok] {"position":"500,400","size":"100,100"}
+<<if $genre is "femme">>
+
+L’élue saisit le panneau. Aussitôt un premier chien se jeta sur elle. L'élue le frappa alors de toutes ses forces. D’un son lourd, la bête tomba, sans un cri. C’était le chef de meute. Il était mort sur le coup.
+
+Ses compagnons, eux, gémirent pour lui. Ils avaient perdu le meilleur d’entre eux. Qui les protégerait à présent ? Ils partirent alors en vitesse, en continuant d’aboyer leur peine.
+
+À présent seule avec le cadavre, l’élue pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlé et abîmé par la faim et la flamme invisible. Autour d'elle, pas d’autres menaces. Pas même de garde nocturne. 
+
+<<else>>L’élu saisit le panneau. Aussitôt un premier chien se jeta sur lui. L'élu le frappa alors de toutes ses forces. D’un son lourd, la bête tomba, sans un cri. C’était le chef de meute. Il était mort sur le coup.
+
+Ses compagnons, eux, gémirent pour lui. Ils avaient perdu le meilleur d’entre eux. Qui les protégerait à présent ? Ils partirent alors en vitesse, en continuant d’aboyer leur peine.
+
+À présent seul avec le cadavre, l’élu pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlé et abîmé par la faim et la flamme invisible. Autour de lui, pas d’autres menaces. Pas même de garde nocturne. <</if>>
+
+[[continuer le voyage|énigme 1]]
+
+
+:: situation initiale [code-ok] {"position":"100,400","size":"100,100"}
+<<if $genre is "femme">>Un individu unique lu ces mots. Qu'un par millénaire. C’était une femme dont les traces blanches sur sa chevelure juvénile annonçait la couleur d’un nouveau temps. Dans un petit bourg, non pas épargné par les cendres, elle s’était reconnue dans le creux des lettres tracées sur le marbre noir. Dans le reflet de sa lame transparaissait un visage giflé par l’air noire. L’âge, les gènes ou la pluie avait eu raison de son éclat. Il en était de même pour tous les autres habitants. Mais pour elle c’était différent. Elle sentait au plus profond de son corps que c’était à elle d’agir, et ce le plus vite possible. Il ne restait pas beaucoup de temps. Pas beaucoup de temps à cette terre. Elle agonisait. De sa vie en dépendaient d’autres, de son destin tout autant. La femme se pressa alors auprès des siens, leur annonçant son départ. Tous ne furent pas enchantés.
+
+« Pourquoi m’abandonnes-tu ? » demandait quelqu’un de fort attaché à l’élue.
+
+« Pour te sauver, pour vous sauver » répondit-elle.
+
+D’autres personnes, traversées autrefois par la même excitation des grandes choses, encouragèrent l’élue.
+
+« Nous t’en croyons capable. Sois forte. »
+
+Enfin, une autre personne s’entretint avec l’élue. Cette personne savait qu’elle ne pouvait pas lui faire changer d’avis, mais désirait s’assurer de son retour.
+
+« Si tu pars c’est que tu as de l’espoir, c’est ça ? »
+
+« Oui, j’en ai. »
+
+« Tu en as pour combien de temps ? »
+
+« C’est dur à dire. Peut-être un an, peut-être six mois, voire même trois si c’est rapide. »
+
+« Tu penses revenir ? »
+
+« J’espère. »
+
+Comme beaucoup d’autres elle prit les armes. Lancée dans une quête qui les sauverait tous.<<else>>
+Un individu unique lu ces mots. Qu'un par millénaire. C’était un homme dont les traces blanches sur sa chevelure juvénile annonçait la couleur d’un nouveau temps. Dans un petit bourg, non pas épargné par les cendres, il s’était reconnu dans le creux des lettres tracées sur le marbre noir. Dans le reflet de sa lame transparaissait un visage giflé par l’air noire. L’âge, les gènes ou la pluie avait eu raison de son éclat. Il en était de même pour tous les autres habitants. Mais pour lui c’était différent. Il sentait au plus profond de son corps que c’était à lui d’agir, et ce le plus vite possible. Il ne restait pas beaucoup de temps. Pas beaucoup de temps à ce monde. Il agonisait. De sa vie en dépendaient d’autres, de son destin tout autant. L’homme se pressa alors auprès des siens, leur annonçant son départ. Tous ne furent pas enchantés.
+
+« Pourquoi nous abandonnes-tu ? » demandait quelqu’un de fort attaché à l’élu
+
+« Pour te sauver, pour vous sauver » répondit-il.
+
+D’autres personnes, traversées autrefois par la même excitation des grandes choses, encouragèrent l’élu :
+
+« Nous t’en croyons capable. Sois fort. »
+
+Enfin, une autre personne s’entretint avec l’élu. Elle savait qu’elle ne pouvait pas lui faire changer d’avis, mais désirait s’assurer de son retour :
+
+« Si tu pars c’est que tu as de l’espoir, c’est ça ? »
+
+« Oui, j’en ai. »
+
+« Tu en as pour combien de temps ? »
+
+« C’est dure à dire. Peut-être un an, peut-être six mois, voire même trois si c’est rapide. »
+
+« Tu penses revenir ? »
+
+« J’espère. »
+
+Autour de lui pourtant pas une seule tête n’avait été épargnée par la Dernière Guerre, la dernière des guerres. Mais il fallait y croire. Il fallait espérer. Comme beaucoup d’autres il prit les armes. Lancé dans une quête qui les sauverait tous.<</if>>
+
+<div style="text-align: center;">[[Suivre son destin|La Zone]]
+</div>
+
+
+
+
+
+:: s’agenouiller et siffler amicalement [à-test] {"position":"300,700","size":"100,100"}
+<<if $morts ==2 and $genre == "femme">>
+<<set $statut to "libre">>
+
+L’élue n’étant pas très dégourdie – ni même franchement maline – répéta les erreurs d’un autre temps. Mais les dieux étant avec elle, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui la mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surprise par le propre mouvement de son bras, l’élue contempla sa lame, salie par le sang.
+
+« L’illusion du choix » dit-elle à voix haute. 
+
+« L’illusion du choix » répéta-t-elle plus fort en accentuant chaque syllabe alors même qu’elle était seule. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seule avec le cadavre, l’élue pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour d'elle, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élue jeta un regard derrière elle. Avait-elle peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts ==2 and $genre == "homme">>
+<<set $statut to "libre">>
+
+L’élu n’étant pas très dégourdi – ni même franchement malin – répéta les erreurs d’un autre temps. Mais les dieux étant avec lui, son épée sortit du fourreau en un battement et traça d'elle-même le chemin qui le mènerait à la victoire de sorte que le bras qui l’accompagnait ne fit que glisser sur le vent. 
+
+Une tête tomba, et s’en était fini du plus gros des molosses. Les autres fuirent aussitôt, non sans un gémissement de douleur à l’égard de leur compagnon tombé au combat.
+
+Surpris par le propre mouvement de son bras, l’élu contempla son épée, sali par le sang.
+
+« L’illusion du choix » dit-il à voix haute. 
+
+« L’illusion du choix » répéta-t-il plus fort en accentuant chaque syllabe alors même qu’il était seul. L’on avait pourtant bien compris le message ici-bas dès la première occurrence.
+
+À présent seul avec le cadavre, l’élu pu prendre le temps de contempler le chien. Il était maigre, le corps marqué des batailles passées, brûlés et abîmé par la faim et la flamme invisible. Autour de lui, pas d’autres menaces. Pas même de garde nocturne. 
+
+Avant de repartir pour sa destinée, l’élu jeta un regard derrière lui. Avait-il peur ?
+
+[[tout abandonner et rentrer chez soi|libre]]
+[[continuer|énigme 1]]
+
+<<elseif $morts <2 and $genre == "femme">>>>
+<<set $mort to "chien">>
+
+Les molosses s’excitèrent. Le plus grand sauta sur l’élue qui tomba. Mais au lieu de lui lécher le visage, il le lui arracha. Les autres suivirent. Tous remuèrent la queue, heureux d’avoir pu enfin contenter leur estomac.
+[[subir|mort]]
+
+<<elseif $morts <2 and $genre == "homme">>>>
+<<set $mort to "chien">>
+Les molosses s’excitèrent. Le plus grand sauta sur l’élu qui tomba. Mais au lieu de lui lécher le visage, il le lui arracha. Les autres suivirent. Tous remuèrent la queue, heureux d’avoir pu enfin contenter leur estomac.
+[[subir|mort]]
+<</if>>
+
+
+
+:: temple de Radiance [à-test] {"position":"1100,400","size":"100,100"}
+La Sphinx garda le silence un instant. Puis, se redressant, elle dit :
+
+« Tu peux entrer, si c'est ce que tu veux vraiment. »
+
+[[Entrer dans le Temple de Radiance|intérieur]]
+
+<<if $statut is "libre">> [[Rebrousser chemin et rentrer chez soi|libre]]
+
+<</if>>
+
+
+:: « Absolument tout. » [code-ok] {"position":"2200,100","size":"100,100"}
+<<if $genre is "femme">>« Si tu pouvais repartir de ton enfance, tu changerais l’entier du cours de ta vie, c’est bien cela ? »
+
+« Oui. Je mènerai une vie différente de celle que j’ai vécue. D’abord je m’éloignerai à tout prix de cette saloperie de prophétie et ensuite je profiterai des choses simples. »
+
+« Certaines choses, certains évènements, certains traits ne peuvent pas être modifiés. Ton environnement te les a imposés. Est-ce que malgré tout tu désirerais quand même tout recommencer ? »
+
+« Attendez, vous me proposez vraiment de tout reprendre depuis le début là ? De faire comme si ma vie actuelle ne s’était jamais déroulée ainsi ? »
+
+« Oui, si c’est ce que tu souhaites je peux t’accorder encore ce souhait. Mais ce sera la dernière fois que tu seras ramenée à la vie. Après il te faudra apprendre à accepter ta mortalité. »
+
+« Pourquoi vous m’accordez tout ça ? Je veux dire vous avez été si gentils avec moi et je vous suis infiniment reconnaissante, mais je ne comprends pas. À la base je pensais que vous faisiez tout ça parce que j’étais l’élue de la prophétie mais visiblement vous n’avez pas grand-chose à faire de cette histoire de destinée. Alors pourquoi ?»
+
+« Tout comme tu dois finir par accepter ta propre mortalité, tu dois accepter que tout n'a pas toujours de sens. »
+
+« D’accord, ne me dites pas pourquoi, mais vous pouvez répondre par oui ou par non : est-ce que vous aviez, vous, une raison pour m’accorder tout ça ? Vous avez quand même changé le destin de plusieurs êtres vivants en me faisant revivre ! »
+
+« Oui. Mais maintenant assez parlé. Tu veux reprendre ta vie depuis tes sept ans ou bien passer dans l’au-delà ? »
+
+<<else>>« Si tu pouvais repartir de ton enfance, tu changerais l’entier du cours de ta vie, c’est bien cela ? »
+
+« Oui. Je mènerai une vie différente de celle que j’ai vécue. D’abord je m’éloignerai à tout prix de cette saloperie de prophétie et ensuite je profiterai des choses simples. »
+
+« Certaines choses, certains évènements, certains traits ne peuvent pas être modifiés. Ton environnement te les a imposés. Est-ce que malgré tout tu désirerais quand même tout recommencer ? »
+
+« Attendez, vous me proposez vraiment de tout reprendre depuis le début là ? De faire comme si ma vie actuelle ne s’était jamais déroulée ainsi ? »
+
+« Oui, si c’est ce que tu souhaites je peux t’accorder encore ce souhait. Mais ce sera la dernière fois que tu seras ramené à la vie. Après il te faudra apprendre à accepter ta mortalité. »
+
+« Pourquoi vous m’accordez tout ça ? Je veux dire vous avez été si gentils avec moi et je vous suis infiniment reconnaissant, mais je ne comprends pas. À la base je croyais que vous faisiez tout ça parce que j’étais l’élu de la prophétie mais visiblement vous n’avez pas grand-chose à faire de cette histoire de destinée. Alors pourquoi ?»
+
+« Tout comme tu dois finir par accepter ta propre mortalité, tu dois accepter que tout n'a pas toujours de sens. »
+
+« D’accord, ne me dites pas pourquoi, mais vous pouvez répondre par oui ou par non : est-ce que vous aviez, vous, une raison pour m’accorder tout ça ? Vous avez quand même changé le destin de plusieurs êtres vivants en me faisant revivre ! »
+
+« Oui. Mais maintenant assez parlé. Tu veux reprendre ta vie depuis tes sept ans ou bien passer dans l’au-delà ? »<</if>>
+
+[[« Merci pour tous, mais finalement je pense qu’il vaut mieux que je quitte enfin ce monde.»]]
+
+[[« J'aimerai tout reprendre depuis mon enfance.»|FIN recommencer]]
+
+
+
+:: « Et... qu’est ce que je dois faire maintenant ? » [double-a-sup-?] {"position":"400,1400","size":"100,100"}
+« Maintenant, tu peux pénétrer dans la forêt de cyprès et te diriger en son centre. Là-bas, tu pourras suivre l'appel de la Grande fin, ta fin. Bon voyage.»
+
+[[Partir de ce monde]]
+
+
+:: « Je crois que je rentrai juste chez moi. J’aurais juste aimé voir mes proches une dernière fois. Pouvoir les serrer dans mes bras rien qu’un jour de plus. » [code-ok] {"position":"2200,200","size":"100,100"}
+« Et bien si c’est ce que tu souhaites, qu’il en soit ainsi.»
+
+[[ressuciter|FIN rentrer]]
+
+
+:: « Je crois que malgré tous, je ne changerais rien. » [code-ok] {"position":"2200,300","size":"100,100"}
+« Pourquoi ? »
+
+« Parce que j’ai bien compris qu’aucun choix n’est vraiment parfait et que quoique je fasse, je finirai toujours avec des regrets. <<if $morts >=2>>Et je commence à vous connaître, vous alliez encore me proposer de me ressusciter n’est-ce pas ? »
+
+« Ce n’est absolument pas notre genre ! »
+
+« Tant mieux parce que j’aurais dit non. J’ai vécu assez de mort pour une seule vie. »<</if>>»
+
+« Tu acceptes donc ta mort ? »
+
+« Oui. »
+
+<<if $genre is "femme">>«Bien, il est grand temps pour toi de rejoindre ta fin. Quand tu te sentiras prête, enfonce-toi dans la forêt de cyprès. Le néant t'appelleras » <<else>>«Bien, il est grand temps pour toi de rejoindre ta fin. Quand tu te sentiras prêt, enfonce-toi dans la forêt de cyprès. Le néant t'appelleras »<</if>>
+
+[[« Merci. »|Partir de ce monde]]
+
+
+
+:: « Mais alors, qu’est ce qui va m’arriver maintenant ? » [code-ok] {"position":"400,1200","size":"100,100"}
+« Tu vas rejoindre le grand vide, comme bien d’autres l’ont fait avant toi et comme bien d’autres le feront après. »
+
+« Et qu’est ce qui va m’arriver concrètement en rejoignant le grand vide ? »
+
+« ça, c’est à toi de le découvrir. Nous ne pouvons pas t’en dire plus. »
+
+« Pourquoi ? »
+
+« La mort se doit de rester mystérieuse. »
+
+[[« Et... qu’est ce que je dois faire maintenant ? »]]
+
+[[« Ramenez-moi à la vie. »]]
+
+
+:: « Merci pour tous, mais finalement je pense qu’il vaut mieux que je quitte enfin ce monde.» [code-ok] {"position":"2400,400","size":"100,100"}
+<<if $genre is "femme">>«Très bien. Il est grand temps pour toi de rejoindre ta fin. Quand tu te sentiras prête, enfonce-toi dans la forêt de cyprès. Le néant t'appellera »
+
+<<else>>«Très bien. Il est grand temps pour toi de rejoindre ta fin. Quand tu te sentiras prêt, enfonce-toi dans la forêt de cyprès. Le néant t'appellera »<</if>>
+
+[[« Au revoir. »|Partir de ce monde]]
+
+
+:: « Ramenez-moi je vous en supplie ! » [code-ok] {"position":"200,1400","size":"100,100"}
+<<if $genre is "femme">>
+
+« Vous ne comprenez pas, sans moi, mes proches … le monde est perdu ! Il n’y aura plus de mort car tout le monde sera déjà mort d’ici moins d’un siècle ! Alors je vous en supplie, ramenez-moi à la vie ! »
+
+« Le monde est plus résilient que tu ne le pense. Pour les humains, c’est bien possible en effet qu’ils disparaissent. Mais la vie perdurera sous une forme ou une autre. Et puis … »
+
+Le Passeur s’interrompt. À ses pieds, des centaines de petits verres dépassent de son vêtement, frémissant, puis disparaissent à nouveau sous son long tissu noir.
+
+« Toutefois, il est vrai que tu es bel et bien l’héroïne de la prophétie. Ton destin est de ramener le monde à son état de paix, de sauver l’humanité de son extinction, de la faire perdurer pour les millénaires à venir si j’en crois bien mes notes. Nous devons nous excuser. Il doit s’agir là d’une erreur. »
+
+« Une erreur ? Une putain d’erreur oui ! »
+
+« Oui tout à fait. Un fil de trop a dû se faire couper. »
+
+« Vous êtes une moire ? Mais comment est-ce possible de se tromper ! »
+
+« C’est-à-dire qu’il y a tellement de morts en ce moment que cela devient difficile de suivre le compte exact … Veuillez-nous pardonner. Nous allons réparer notre erreur. »
+
+« réparer vos erreurs ? »
+
+« Vous ramener à la vie. »
+
+« Attendez, sérieuse-»
+
+Le drap tombe. Des centaines de rats, empilés les uns sur les autres, me sautent dessus, me dév-. 
+
+<<else>>« Vous ne comprenez pas, sans moi, mes proches … le monde est perdu ! Il n’y aura plus de mort car tout le monde sera déjà mort d’ici moins d’un siècle ! Alors je vous en supplie, ramenez-moi à la vie ! »
+
+« Le monde est plus résilient que tu ne le pense. Pour les humains, c’est bien possible en effet. Mais la vie perdurera sous une forme ou une autre. Et puis … »
+
+Le Passeur s’interrompt. À ses pieds, des centaines de petits verres dépassent de son vêtement, frémissant, puis disparaissent à nouveau sous son long tissu noir.
+
+« Toutefois, il est vrai que tu es bel et bien le héros de la prophétie. Ton destin est de ramener le monde à son état de paix, de sauver l’humanité de son extinction, de la faire perdurer pour les millénaires à venir si j’en crois bien mes notes. Nous devons nous excuser. Il doit s’agir là d’une erreur. »
+
+« Une erreur ? Une putain d’erreur oui ! »
+
+« Oui tout à fait. Un fil de trop a dû se faire couper. »
+
+« Vous êtes une moire ? Mais comment est-ce possible de se tromper ! »
+
+« C’est-à-dire qu’il y a tellement de morts en ce moment que cela devient difficile de suivre le compte exact. Veuillez-nous pardonner. Nous allons réparer notre erreurs. »
+
+« réparer vos erreurs ? »
+
+« Vous ramener à la vie. »
+
+« Attendez, sérieuse-»
+Le drap tombe. Des centaines de rats, empilés les uns sur les autres, me sautent dessus, me dév-. <</if>>
+
+[[subir|retour à la vie]]
+
+
+
+:: « Ramenez-moi à la vie. » [code-ok] {"position":"200,1200","size":"100,100"}
+« Ramenez-moi. Ramenez-moi à la vie !»
+
+« Nous ne pouvons pas faire cela. Tu imagines si nous le faisions pour tous ceux qui le demandent ? Il n'y aurait plus de place pour poser le pied sur Terre ! »
+
+[[« Ramenez-moi je vous en supplie ! »]]
+
+[[« Mais alors... qu’est ce que je dois faire maintenant ? »|« Et... qu’est ce que je dois faire maintenant ? »]]
+
+
+:: énigme 1 [code-ok mise-en-forme] {"position":"700,400","size":"100,100"}
+<<if $mort is "enigme" >>« Je suis un aigle qui étend ses ailes au-dessus du soleil rouge. Je ponds et je ponds encore pour faire de ces villes un énorme nid où mes deux œufs tout chauds réchaufferont le cœur des dormeurs. Qui suis-je ? »
+
+<!-- toute cette partie du code est issue de ChatGPT  --><<link "réfléchir intensément">>
+    <<replace "#réfléchir-intensément">>    Alors que le silence commençait à devenir lourd, le vent siffla entre les tours. Soudain, une bourrasque dressa les poils de tous les félins. Elle finit sa course dans une oreille bénie des dieux et lui murmura : Enola Straight.<</replace>>
+<</link>>
+<span id="réfléchir-intensément"></span>
+
+<<elseif $mort is "sphinx" >>« Je suis un aigle qui étend ses ailes au-dessus du soleil rouge. Je ponds et je ponds encore pour faire de ces villes un énorme nid où mes deux œufs tous chauds réchaufferont le cœur des dormeurs. Qui suis-je ? »
+
+<!-- toute cette partie du code est issue de ChatGPT  --><<link "réfléchir intensément">>
+    <<replace "#réfléchir-intensément">>    Alors que le silence commençait à devenir lourd, le vent siffla entre les tours. Soudain, une bourrasque dressa les poils de tous les félins. Elle finit sa course dans une oreille bénie des dieux et lui murmura : Enola Straight.<</replace>>
+<</link>>
+<span id="réfléchir-intensément"></span>
+
+<<elseif $genre is "femme">>Après avoir traversé des plaines transpercées de longs piques noirs, des lacs contaminés par la radiance, et les ruines d’une civilisation disparue, l’élue pu enfin contempler le temple de Radiance. Son appellation mystique ne semblait pas coller à ce gros bloc de béton terni, à peine plus haut que les tours monolithiques qui parsemaient la cité. En avançant, l’élue sembla toutefois ressentir une vive douleur à s’en tenir le ventre. Peut-être était-ce la faute de l’énergie transperçante qui émanait du lieu. 
+
+À proximité de l’entrée, des dizaines de chats étaient assis sur l’escalier. L’élue se figea. Sous sa surveillance, un grand chat. Non. Une femme. Elle se tenait devant la double-porte, le corps de félin reposé sur un cube de pierre qui donnait sur les marches. Depuis le début, elle fixait la voyageuse. Elle dit :
+
+« Tu n’a rien à faire ici. »
+
+Malgré cet avertissement, l’élue s’avança. En le faisant, la femme-chat se redressa sur ses pattes avant. Ne se laissant pas intimider, l’héroïne fit mine d’être une fidèle et expliqua sa volonté de pénétrer dans le bâtiment. La garde répondit :
+
+« Je ne peux pas te laisser entrer. Ce Temple est aussi dangereux que sacré. Ton corps ne pourrait contenir toute l’énergie divine qu’il a à offrir. Moi ? Je vis ici depuis des lustres, le Temple a accepté de bénir mon corps de sa Radiance. Elle fait partie intégrante de moi. »
+
+Guidée par un impératif, l'héroïne insista encore et encore, mais fit face à un nouveau refus.
+
+« Tu m’as tout l’air d’une hérétique. Je ne veux pas savoir que tu sois l'héroïne d’une prophétie ou d’une autre. La voix de Ash est la seule qui compte. De plus, si tu entres là-dedans, tu vas te faire atomiser. Tu vois ces ombres sur le mur ? Et bien ce sont les restes de ceux qui n’ont pas pu supporter la Radiance sous sa forme la plus pure.
+
+Mais l'héroïne insista encore. Alors qu’elle racontait avoir déjà été bénie par la radiance autrefois, elle s’interrompit. Elle toussa très fort contre le sol, le salissant de son sang. Les yeux de la féline s’arrondirent.
+
+« Bon tu ne m’as effectivement pas l’air d’être totalement hérétique. Mais pour ton bien comme celui du temple je vais devoir en obtenir la certitude. Je vais donc te poser trois énigmes qui me prouveront ta sagesse, ta pureté et ta foi. Si tu réussis à trouver la bonne réponse à toutes les questions, je t’accorderai l’accès au temple. Dans le cas contraire, je serai dans l’obligation de te tuer pour avoir déjà tant profité de la radiance sans en être digne. »
+
+L'héroïne n’eut pas le temps de rétorquer quoi que ce soit que la femme posa sa première énigme :
+
+« Je suis un aigle qui étend ses ailes au-dessus du soleil rouge. Je ponds et je ponds encore pour faire de ces villes d’énormes nids où mes deux œufs tout chauds réchaufferont le cœur des dormeurs. Qui suis-je ? »
+
+<<elseif $genre is "homme">>Après avoir traversé des plaines transpercées de longs piques noirs, des lacs contaminés par la radiance, et les ruines d’une civilisation disparue, l’élu pu enfin contempler le temple de Radiance. Son appellation mystique ne semblait pas coller à ce gros bloc de béton terni, à peine plus haut que les tours monolithiques qui parsemaient la cité. En avançant, l’élu sembla toutefois ressentir une vive douleur à s’en tenir le ventre. Peut-être était-ce la faute de l’énergie transperçante qui émanait du lieu. 
+
+À proximité de l’entrée, des dizaines de chats s’étaient assis sur l’escalier. L’élu se figea. Sous sa surveillance, un grand chat. Non. Une femme. Elle se tenait devant la double-porte, le corps de félin reposé sur un cube de pierre qui donnait sur les marches. Depuis le début, elle fixait l’élu. Elle dit :
+
+« Tu n’a rien à faire ici. »
+
+Malgré cet avertissement, l’élu s’avança. En le faisant, la femme se redressa sur ses pattes avant. Ne se laissant pas intimider, l’élu fit mine d’être un fidèle et expliqua sa volonté de pénétrer dans le bâtiment. Elle répondit 
+:
+« Je ne peux pas te laisser entrer. Ce Temple est aussi dangereux que sacrée. Ton corps ne pourrait contenir toute l’énergie divine qu’il a à offrir. Moi ? Je vis ici depuis des lustres, le Temple a accepté de bénir mon corps de sa Radiance. Elle fait partie intégrante de moi. »
+
+Guidé par un impératif, le héros insista encore et encore, mais fit face à un nouveau refus.
+
+« Tu m’as tout l’air d’un hérétique. Je ne veux pas savoir que tu sois le héros d’une quelconque prophétie ou d’une autre. La voix de Ash est la seule qui compte. De plus, si tu entres là-dedans, tu vas te faire atomiser. Tu vois ces ombres sur le mur ? Et bien ce sont les restes de ceux qui n’ont pas pu supporter la Radiance sous sa forme la plus pure.
+
+Mais le héros insista encore. Alors qu’il racontait avoir déjà été béni par la radiance autrefois, il s’interrompit. Il toussa très fort contre le sol, le salissant de son sang. Les yeux de la féline s’arrondirent.
+
+« Bon tu ne m’as effectivement pas l’air d’être totalement un hérétique. Mais pour ton bien comme celui du temple je vais devoir en obtenir la certitude. Je vais donc te poser trois énigmes qui me prouveront ta sagesse, ta pureté et ta foi. Si tu réussis à trouver la bonne réponse à toutes les questions, je t’accorderai l’accès au temple. Dans le cas contraire, je serai dans l’obligation de te tuer pour avoir déjà tant profité de la radiance sans en être digne. »
+
+Le héros n’eut pas le temps de rétorquer quoi que ce soit que la femme posa sa première énigme :
+
+« Je suis un aigle qui étend ses ailes au-dessus du soleil rouge. Je ponds et je ponds encore pour faire de ces villes d’énormes nids où mes deux œufs tout chauds réchaufferont le cœur des dormeurs. Qui suis-je ? »<</if>>
+
+[[L'attaquer|combat Sphinx]]
+
+<!-- toute cette partie du code est issue de ChatGPT  -->
+<<textbox "$réponse"réponse>>
+<<button "Valider">>
+	<<if $réponse.toLowerCase().trim() == "enola straight">>
+		<<goto "énigme 2">>
+        <<elseif$réponse.toLowerCase().trim() == "enola gay">>
+    <<goto "mort enola">>
+	<<else>>
+		<<goto "mort énigme">>
+	<</if>>
+<</button>>
+
+
+
+:: énigme 2 [code-ok] {"position":"800,400","size":"100,100"}
+Un silence. Quelque peu troublée, elle reprit :
+
+«C’est juste. Attention voilà l’énigme suivante: J’ai un cœur de pierre, et pourtant l’on a été capable de me le faire fondre. Pour passer de l’un à l’autre, il a fallu que l’on me mette à l’épreuve, que tout mon sang bout, pour qu’enfin je me décide à libérer mon plein potentiel. Qui suis-je ?»
+
+[[L’attaquer|combat Sphinx]]
+
+<!-- toute cette partie du code est issue de ChatGPT  --><<link "réfléchir intensément">>
+    <<replace "#réfléchir-intensément">> Le vent silffa dans une oreille bénie des dieux : RBMK.<</replace>>
+<</link>>
+<span id="réfléchir-intensément"></span>
+<<textbox "$réponse"réponse>>
+
+<<button "Valider">>
+	<<if $réponse.toLowerCase().trim() == "rbmk">>
+		<<goto "énigme 3">>
+	<<else>>
+		<<goto "mort">>
+	<</if>>
+<</button>>
+
+
+
+:: énigme 3 [code-ok] {"position":"900,400","size":"100,100"}
+<<if $genre is "femme">>« C’est … juste. Je n’y crois pas. Tu n’as pas triché ? Tu lis dans les pensées ? Ce n’est pas possible. Je … je vais te tuer ! »
+
+Alors qu’elle s’apprêtait à se jeter sur l’élue, elle se figea. 
+
+« Non. Pardon, excuse-moi. C’est juste la première fois que cela arrive. »
+
+La face de la Spinx était redevenue de marbre. Son corps, lui, s'était rassis. Elle demanda ensuite :
+
+« Maintenant, place à ma dernière question. Qu'est ce que tu ferais s'il ne te restait plus qu'une journée à vivre ? »
+
+<<else>>« C’est … juste. Je n’y crois pas. Tu n’as pas triché ? Tu lis dans les pensées ? Ce n’est pas possible. Je … je vais te tuer ! »
+
+Alors qu’elle s’apprêtait à se jeter sur l’élu, elle se figea. 
+
+« Non. Pardon, excuse-moi. C’est juste la première fois que cela arrive. »
+
+La face de la Spinx était redevenue de marbre. Son corps, lui, s'était rassis. Elle demanda ensuite :
+
+« Maintenant, place à ma dernière question. Qu'est ce que tu ferais s'il ne te restait plus qu'une journée à vivre ? »<</if>>
+
+<!-- toute cette partie du code est issue de ChatGPT  --><<link "écouter le vent">>
+    <<replace "#écouter-le-vent">>Le vent s'était tut.<</replace>>
+<</link>>
+<span id="écouter-le-vent"></span>
+[[L’attaquer|combat Sphinx]]
+
+<<textbox "$réponse"reponse>>
+<<button "Valider">>
+	<<goto "temple de Radiance">>
+<</button>>
+
+
+
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body {
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.8em;
+  background: #fdf8f3;
+  color: #2d1b0e;
+  line-height: 1.6;
+}
+
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+/* Justifie tout le texte de tous les passages */
+#passages {
+  text-align: justify;
+}
